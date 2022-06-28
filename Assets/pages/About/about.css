@@ -1,0 +1,1574 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-family: "Poppins", sans-serif;
+}
+
+* ul,
+* li {
+  list-style: none;
+}
+
+* a {
+  text-decoration: none;
+}
+
+* .header {
+  width: 100%;
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  font-family: sans-serif;
+}
+
+* .header nav {
+  padding: 0 190px;
+  height: 80px;
+  width: 100%;
+  background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+* .header nav label a {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: white;
+}
+
+* .header nav ul {
+  float: right;
+}
+
+* .header nav ul li {
+  display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+* .header nav ul li a {
+  font-size: 14px;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 400;
+  opacity: 1 !important;
+}
+
+* .header nav ul li a:hover {
+  color: #8d703b;
+}
+
+* .header nav #icon {
+  color: #ffffff;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: none;
+}
+
+* .header.active {
+  width: 100%;
+  position: fixed;
+  z-index: 99999;
+  font-family: sans-serif;
+}
+
+* .header.active nav {
+  padding: 0 190px;
+  height: 80px;
+  width: 100%;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+* .header.active nav label a {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: black;
+}
+
+* .header.active nav ul {
+  float: right;
+}
+
+* .header.active nav ul li {
+  display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+* .header.active nav ul li a {
+  font-size: 14px;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: black;
+  font-weight: 400;
+  opacity: 1 !important;
+}
+
+* .header.active nav ul li a:hover {
+  color: #8d703b;
+}
+
+* .header.active nav #icon {
+  color: #ffffff;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: none;
+}
+
+* .entrance {
+  position: relative;
+}
+
+* .entrance figure {
+  width: 100%;
+  height: 300px;
+}
+
+* .entrance figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+* .entrance .entranceDesc {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+* .entrance .entranceDesc .entranceNav {
+  text-align: center;
+}
+
+* .entrance .entranceDesc .entranceNav a {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  color: #fff;
+  margin-right: 20px;
+}
+
+* .entrance .entranceDesc .entranceNav span {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+}
+
+* .entrance .entranceDesc h1 {
+  font-weight: 400;
+  color: #fff;
+  font-size: 60px;
+  font-family: "Playfair Display", Arial, serif;
+  line-height: 1.5;
+}
+
+* .ourStaff {
+  padding: 0 190px;
+  width: 100%;
+  height: 290px;
+  background-color: #8d703b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+* .ourStaff .counters {
+  width: 21%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+* .ourStaff .counters .counter {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+* .ourStaff .counters p {
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+* .aboutUs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 190px;
+  margin-bottom: 120px;
+  width: 100%;
+  height: 800px;
+}
+
+* .aboutUs .aboutUsVideo {
+  padding-right: 70px;
+  width: 50%;
+  height: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .aboutUs .aboutUsVideo a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+* .aboutUs .aboutUsVideo a img {
+  width: 100%;
+  height: 100%;
+}
+
+* .aboutUs .aboutUsVideo a div {
+  position: absolute;
+  width: 22%;
+  height: 100px;
+  border-radius: 50%;
+  background: #8d703b;
+  top: 40%;
+  bottom: 0;
+  z-index: 13;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .aboutUs .aboutUsVideo a div i {
+  font-size: 24px;
+  color: #fff;
+}
+
+* .aboutUs .aboutUsWelcome {
+  width: 49%;
+}
+
+* .aboutUs .aboutUsWelcome .aboutUsName {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 40px;
+}
+
+* .aboutUs .aboutUsWelcome .aboutUsName span {
+  padding-bottom: 10px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: gray;
+  font-family: "Poppins", sans-serif;
+}
+
+* .aboutUs .aboutUsWelcome .aboutUsName h2 {
+  font-family: "Playfair Display", Arial, serif;
+  color: #000;
+  font-size: 38px;
+  font-weight: 400;
+  margin-bottom: 44px;
+}
+
+* .aboutUs .aboutUsWelcome .aboutUsDescription .aboutUsDescription1 {
+  font-family: "Poppins", sans-serif;
+  color: gray;
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+* .aboutUs .aboutUsWelcome .aboutUsDescription .aboutUsDescription2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: gray;
+  margin-bottom: 20px;
+}
+
+* .aboutUs .aboutUsWelcome .aboutUsSocialWeb ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+* .aboutUs .aboutUsWelcome .aboutUsSocialWeb ul li {
+  padding-right: 20px;
+}
+
+* .aboutUs .aboutUsWelcome .aboutUsSocialWeb ul li i {
+  color: #8d703b;
+}
+
+* .acquaintanceHotel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-bottom: 135px;
+  padding: 0 190px;
+}
+
+* .acquaintanceHotel div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fff;
+  text-align: center;
+  width: 23%;
+  height: 326px;
+  margin-right: 30px;
+}
+
+* .acquaintanceHotel div .acquaintanceHotelPic {
+  width: 30%;
+  height: 100px;
+  background-color: #f6f2ea;
+  border-radius: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .acquaintanceHotel div .acquaintanceHotelPic i {
+  font-size: 35px;
+  color: #8d703b;
+}
+
+* .acquaintanceHotel div .acquaintanceHotelDescription {
+  width: 100%;
+}
+
+* .acquaintanceHotel div .acquaintanceHotelDescription h3 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Playfair Display", Arial, sans-serif;
+  font-size: 30px;
+  color: black;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+* .acquaintanceHotel div .acquaintanceHotelDescription p {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: gray;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+* .instagram {
+  width: 100%;
+  height: 370px;
+}
+
+* .instagram .instagramHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 44px;
+}
+
+* .instagram .instagramHeader h2 {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  line-height: 1.5;
+  color: #000000;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+
+* .instagram .instagramHeader h2::before {
+  width: 60%;
+  height: 2px;
+  bottom: -19px;
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: #8d703b;
+  content: "";
+}
+
+* .instagram .instagramHeader h2 span {
+  text-align: center;
+  color: #000;
+  line-height: 1.5;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+* .instagram .instagramHeader h2::after {
+  content: "";
+  width: 80%;
+  height: 2px;
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: #8d703b;
+  margin-bottom: 4px;
+}
+
+* .instagram .instagramPictures ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .instagram .instagramPictures ul li {
+  cursor: pointer;
+  width: 20%;
+  height: 280px;
+  position: relative;
+}
+
+* .instagram .instagramPictures ul li .clickable-image {
+  width: 100%;
+  height: 100%;
+}
+
+* .instagram .instagramPictures ul li div {
+  margin: 15px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .instagram .instagramPictures ul li div i {
+  font-size: 45px;
+  color: #fff;
+}
+
+* .instagram .instagramPictures ul li img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+* .instagram .instagramPictures ul li:hover div {
+  opacity: 100;
+  background: rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .footer {
+  background-color: #232323;
+  width: 100%;
+  height: 510px;
+  padding: 0 190px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .footer .footerDeluxeHotel {
+  width: 25%;
+  height: 350px;
+  margin-right: 70px;
+}
+
+* .footer .footerDeluxeHotel h5 {
+  color: #fff;
+  margin-bottom: 40px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+* .footer .footerDeluxeHotel span {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.8;
+}
+
+* .footer .footerDeluxeHotel .footerSocialWeb {
+  margin-top: 70px;
+}
+
+* .footer .footerDeluxeHotel .footerSocialWeb ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .footer .footerDeluxeHotel .footerSocialWeb ul li {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  border-radius: 50%;
+  background-color: #2e2e2e;
+}
+
+* .footer .footerDeluxeHotel .footerSocialWeb ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+* .footer .footerDeluxeHotel .footerSocialWeb ul li a i {
+  color: #fff;
+  font-size: 25px;
+}
+
+* .footer .footerLinks {
+  width: 21%;
+  height: 350px;
+  margin-right: 40px;
+}
+
+* .footer .footerLinks h5 {
+  color: #fff;
+  margin-bottom: 40px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+* .footer .footerLinks div ul li {
+  margin-bottom: 20px;
+}
+
+* .footer .footerLinks div ul li a {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.8;
+}
+
+* .footer .footerLinks div ul li a:hover {
+  color: #fff;
+}
+
+* .footer .footerPrivacy {
+  width: 21%;
+  height: 350px;
+  margin-right: 40px;
+}
+
+* .footer .footerPrivacy h5 {
+  color: #fff;
+  margin-bottom: 40px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+* .footer .footerPrivacy div ul li {
+  margin-bottom: 20px;
+}
+
+* .footer .footerPrivacy div ul li a {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.8;
+}
+
+* .footer .footerPrivacy div ul li a:hover {
+  color: #fff;
+}
+
+* .footer .footerCare {
+  width: 26%;
+  height: 350px;
+}
+
+* .footer .footerCare h5 {
+  color: #fff;
+  margin-bottom: 40px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+* .footer .footerCare .footerQuestion {
+  width: 100%;
+}
+
+* .footer .footerCare .footerQuestion ul li {
+  margin-bottom: 10px;
+}
+
+* .footer .footerCare .footerQuestion ul li .footerAddress {
+  width: 100%;
+}
+
+* .footer .footerCare .footerQuestion ul li .footerAddress ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+* .footer .footerCare .footerQuestion ul li .footerAddress ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 20px;
+}
+
+* .footer .footerCare .footerQuestion ul li .footerAddress ul li i {
+  color: #fff;
+}
+
+* .footer .footerCare .footerQuestion ul li .footerAddress ul li p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.8;
+}
+
+* .footer .footerCare .footerQuestion ul li .footerNumber {
+  width: 100%;
+}
+
+* .footer .footerCare .footerQuestion ul li .footerNumber ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .footer .footerCare .footerQuestion ul li .footerNumber ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 10px;
+}
+
+* .footer .footerCare .footerQuestion ul li .footerNumber ul li a i {
+  color: #fff;
+}
+
+* .footer .footerCare .footerQuestion ul li .footerNumber ul li a {
+  color: #fff;
+}
+
+* .footer .footerCare .footerQuestion ul li .footerNumber ul li a span {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.8;
+}
+
+* .footer .footerCare .footerQuestion ul li .footerEmail {
+  width: 100%;
+}
+
+* .footer .footerCare .footerQuestion ul li .footerEmail ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .footer .footerCare .footerQuestion ul li .footerEmail ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 10px;
+}
+
+* .footer .footerCare .footerQuestion ul li .footerEmail ul li a {
+  color: #fff;
+}
+
+* .footer .footerCare .footerQuestion ul li .footerEmail ul li a span {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.8;
+}
+
+@media (max-width: 786px) {
+  * .header {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    background: #232323;
+  }
+  * .header nav {
+    padding: 0 10px;
+  }
+  * .header nav label a {
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+  }
+  * .header nav ul {
+    position: fixed;
+    width: 100%;
+    top: -600px;
+    height: 50vh;
+    background: #232323;
+  }
+  * .header nav ul li {
+    display: block;
+    margin-top: 20px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  * .header nav ul.show {
+    left: 0;
+    top: 70px;
+  }
+  * .header nav #icon {
+    display: block;
+    border: none;
+    color: rgba(255, 255, 255, 0.5) !important;
+    cursor: pointer;
+    padding-right: 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+  }
+  * .header.active {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    background: white;
+  }
+  * .header.active nav {
+    padding: 0 10px;
+  }
+  * .header.active nav label a {
+    font-size: 20px;
+  }
+  * .header.active nav ul {
+    position: fixed;
+    padding: 0 10px;
+    width: 100%;
+    top: -100%;
+    height: 50vh;
+    background: white;
+  }
+  * .header.active nav ul li {
+    color: black;
+    display: block;
+    margin: 20px 0;
+    line-height: 30px;
+    text-transform: none;
+  }
+  * .header.active nav ul.show {
+    left: 0;
+    top: 70px;
+  }
+  * .header.active nav #icon {
+    display: block;
+    display: block;
+    border: none;
+    color: rgba(0, 0, 0, 0.5) !important;
+    border-color: rgba(0, 0, 0, 0.5) !important;
+    cursor: pointer;
+    padding-right: 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+  }
+  * .aboutUs {
+    padding: 0 15px;
+    width: 100%;
+  }
+  * .aboutUs .aboutUsWelcome {
+    height: 100%;
+    width: 43%;
+  }
+  * .acquaintanceHotel {
+    padding: 0 30px;
+    width: 100%;
+    margin-top: 200px;
+  }
+  * .acquaintanceHotel div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 24%;
+  }
+  * .acquaintanceHotel div .acquaintanceHotelPic {
+    width: 65%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  * .acquaintanceHotel div .acquaintanceHotelPic i {
+    font-size: 30px;
+  }
+  * .acquaintanceHotel div .acquaintanceHotelDescription h3 {
+    width: 100%;
+    font-size: 24px;
+  }
+  * .acquaintanceHotel div .acquaintanceHotelDescription p {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+  }
+  * .ourStaff {
+    width: 100%;
+    padding: 0 30px;
+  }
+  * .ourStaff .counters {
+    width: 23%;
+  }
+  * .footer {
+    padding: 0 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  * .header {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    background: #232323;
+  }
+  * .header nav {
+    padding: 0 10px;
+  }
+  * .header nav label a {
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+  }
+  * .header nav ul {
+    position: fixed;
+    width: 100%;
+    top: -600px;
+    height: 50vh;
+    background: #232323;
+  }
+  * .header nav ul li {
+    display: block;
+    margin-top: 20px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  * .header nav ul.show {
+    left: 0;
+    top: 70px;
+  }
+  * .header nav #icon {
+    display: block;
+    border: none;
+    color: rgba(255, 255, 255, 0.5) !important;
+    cursor: pointer;
+    padding-right: 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+  }
+  * .header.active {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    background: white;
+  }
+  * .header.active nav {
+    padding: 0 10px;
+  }
+  * .header.active nav label a {
+    font-size: 20px;
+  }
+  * .header.active nav ul {
+    position: fixed;
+    padding: 0 10px;
+    width: 100%;
+    top: -100%;
+    height: 50vh;
+    background: white;
+  }
+  * .header.active nav ul li {
+    color: black;
+    display: block;
+    margin: 20px 0;
+    line-height: 30px;
+    text-transform: none;
+  }
+  * .header.active nav ul.show {
+    left: 0;
+    top: 70px;
+  }
+  * .header.active nav #icon {
+    display: block;
+    display: block;
+    border: none;
+    color: rgba(0, 0, 0, 0.5) !important;
+    border-color: rgba(0, 0, 0, 0.5) !important;
+    cursor: pointer;
+    padding-right: 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+  }
+  * .ourStaff {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    height: 400px;
+    padding: 0 30px;
+  }
+  * .ourStaff .counters {
+    width: 100%;
+  }
+  * .aboutUs {
+    padding: 0 10px;
+    height: auto;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  * .aboutUs .aboutUsVideo {
+    padding: 0;
+    width: 100%;
+    height: 400px;
+  }
+  * .aboutUs .aboutUsVideo a {
+    width: 100%;
+    height: 100%;
+  }
+  * .aboutUs .aboutUsVideo a img {
+    width: 100%;
+    height: 100%;
+  }
+  * .aboutUs .aboutUsWelcome {
+    padding: 0 10px;
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+  }
+  * .acquaintanceHotel {
+    padding: 0 30px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: center;
+  }
+  * .acquaintanceHotel div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin-right: 0px;
+  }
+  * .acquaintanceHotel div .acquaintanceHotelPic {
+    width: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  * .acquaintanceHotel div .acquaintanceHotelPic i {
+    font-size: 35px;
+  }
+  * .acquaintanceHotel div .acquaintanceHotelDescription {
+    width: 100%;
+  }
+  * .acquaintanceHotel div .acquaintanceHotelDescription h3 {
+    width: 100%;
+    font-size: 24px;
+  }
+  * .acquaintanceHotel div .acquaintanceHotelDescription p {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+  }
+  * .instagram {
+    width: 100%;
+    height: auto;
+  }
+  * .instagram .instagramHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 44px;
+  }
+  * .instagram .instagramHeader h2 {
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    line-height: 1.5;
+    color: #000000;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+  }
+  * .instagram .instagramHeader h2::before {
+    width: 60%;
+    height: 2px;
+    bottom: -19px;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: #8d703b;
+    content: "";
+  }
+  * .instagram .instagramHeader h2 span {
+    text-align: center;
+    color: #000;
+    line-height: 1.5;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+  }
+  * .instagram .instagramHeader h2::after {
+    content: "";
+    width: 80%;
+    height: 2px;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: #8d703b;
+    margin-bottom: 4px;
+  }
+  * .instagram .instagramPictures ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+  * .instagram .instagramPictures ul li {
+    cursor: pointer;
+    width: 100%;
+    height: 280px;
+    position: relative;
+  }
+  * .instagram .instagramPictures ul li .clickable-image {
+    width: 100%;
+    height: 100%;
+  }
+  * .footer {
+    background-color: #232323;
+    width: 100%;
+    height: auto;
+    padding: 0 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  * .footer .footerDeluxeHotel {
+    padding-top: 80px;
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+  }
+  * .footer .footerDeluxeHotel h5 {
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+  }
+  * .footer .footerDeluxeHotel span {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.8;
+  }
+  * .footer .footerDeluxeHotel .footerSocialWeb {
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  * .footer .footerDeluxeHotel .footerSocialWeb ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  * .footer .footerDeluxeHotel .footerSocialWeb ul li {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    border-radius: 50%;
+    background-color: #2e2e2e;
+  }
+  * .footer .footerDeluxeHotel .footerSocialWeb ul li a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+  }
+  * .footer .footerDeluxeHotel .footerSocialWeb ul li a i {
+    color: #fff;
+    font-size: 25px;
+  }
+  * .footer .footerLinks {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+  }
+  * .footer .footerLinks h5 {
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+  }
+  * .footer .footerLinks div ul li {
+    margin-bottom: 20px;
+  }
+  * .footer .footerLinks div ul li a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.8;
+  }
+  * .footer .footerLinks div ul li a:hover {
+    color: #fff;
+  }
+  * .footer .footerPrivacy {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+  }
+  * .footer .footerPrivacy h5 {
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  * .footer .footerPrivacy div ul li {
+    margin-bottom: 20px;
+  }
+  * .footer .footerPrivacy div ul li a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.8;
+  }
+  * .footer .footerPrivacy div ul li a:hover {
+    color: #fff;
+  }
+  * .footer .footerCare {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+  }
+  * .footer .footerCare h5 {
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+  }
+  * .footer .footerCare .footerQuestion {
+    width: 100%;
+  }
+  * .footer .footerCare .footerQuestion ul li {
+    margin-bottom: 10px;
+  }
+  * .footer .footerCare .footerQuestion ul li .footerAddress {
+    width: 100%;
+  }
+  * .footer .footerCare .footerQuestion ul li .footerAddress ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  * .footer .footerCare .footerQuestion ul li .footerAddress ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 20px;
+  }
+  * .footer .footerCare .footerQuestion ul li .footerAddress ul li i {
+    color: #fff;
+  }
+  * .footer .footerCare .footerQuestion ul li .footerAddress ul li p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.8;
+  }
+  * .footer .footerCare .footerQuestion ul li .footerNumber {
+    width: 100%;
+  }
+  * .footer .footerCare .footerQuestion ul li .footerNumber ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  * .footer .footerCare .footerQuestion ul li .footerNumber ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 10px;
+  }
+  * .footer .footerCare .footerQuestion ul li .footerNumber ul li a i {
+    color: #fff;
+  }
+  * .footer .footerCare .footerQuestion ul li .footerNumber ul li a {
+    color: #fff;
+  }
+  * .footer .footerCare .footerQuestion ul li .footerNumber ul li a span {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.8;
+  }
+  * .footer .footerCare .footerQuestion ul li .footerEmail {
+    width: 100%;
+  }
+  * .footer .footerCare .footerQuestion ul li .footerEmail ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  * .footer .footerCare .footerQuestion ul li .footerEmail ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 10px;
+  }
+  * .footer .footerCare .footerQuestion ul li .footerEmail ul li a {
+    color: #fff;
+  }
+  * .footer .footerCare .footerQuestion ul li .footerEmail ul li a span {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.8;
+  }
+}
+/*# sourceMappingURL=about.css.map */

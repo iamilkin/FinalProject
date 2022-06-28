@@ -1,0 +1,1207 @@
+$text_main_color: #ffffff;
+@mixin center($x, $y) {
+  display: flex;
+  justify-content: $x;
+  align-items: $y;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.5s;
+  font-family: "Poppins", sans-serif;
+  ul,
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+
+  //  Header start
+  .header {
+    width: 100%;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    font-family: sans-serif;
+    nav {
+      padding: 0 190px;
+      height: 80px;
+      width: 100%;
+      background: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      label {
+        a {
+          font-weight: 700;
+          font-size: 20px;
+          text-transform: uppercase;
+          color: white;
+        }
+      }
+      ul {
+        float: right;
+        li {
+          display: inline-block;
+          align-items: center;
+          justify-content: space-around;
+          // padding-right: 10px;
+          a {
+            font-size: 14px;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            padding-left: 20px;
+            padding-right: 20px;
+            color: rgba(255, 255, 255, 0.7);
+            font-weight: 400;
+            opacity: 1 !important;
+            &:hover {
+              color: #8d703b;
+            }
+          }
+        }
+      }
+      #icon {
+        color: #ffffff;
+        font-size: 20px;
+        text-transform: uppercase;
+        cursor: pointer;
+        display: none;
+      }
+    }
+  }
+  .header.active {
+    width: 100%;
+    position: fixed;
+    z-index: 99999;
+    // top: 0;  
+    font-family: sans-serif;
+    nav {
+      padding: 0 190px;
+      height: 80px;
+      width: 100%;
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      label {
+        a {
+          font-weight: 700;
+          font-size: 20px;
+          text-transform: uppercase;
+          color: black;
+        }
+      }
+      ul {
+        float: right;
+        li {
+          display: inline-block;
+          align-items: center;
+          justify-content: space-around;
+          // padding-right: 10px;
+          a {
+            font-size: 14px;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            padding-left: 20px;
+            padding-right: 20px;
+            color: black;
+            font-weight: 400;
+            opacity: 1 !important;
+            &:hover {
+              color: #8d703b;
+            }
+          }
+        }
+      }
+      #icon {
+        color: #ffffff;
+        font-size: 20px;
+        text-transform: uppercase;
+        cursor: pointer;
+        display: none;
+      }
+    }
+  }
+  //  Header end
+
+  // Entrance Rooms Start
+  .entrance {
+    position: relative;
+    figure {
+      width: 100%;
+      height: 300px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .entranceDesc {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      @include center(center, center);
+      flex-direction: column;
+      .entranceNav {
+        text-align: center;
+        a {
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          transition: 0.3s all ease;
+          color: #fff;
+          margin-right: 20px;
+        }
+        span {
+          border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+          color: rgba(255, 255, 255, 0.7);
+          text-transform: uppercase;
+        }
+      }
+      h1 {
+        font-weight: 400;
+        color: #fff;
+        font-size: 60px;
+        // margin-bottom: 30px;
+        font-family: "Playfair Display", Arial, serif;
+        line-height: 1.5;
+      }
+    }
+  }
+  // Entrance Rooms End
+
+
+  // Room Main Start
+  .roomProperties {
+    padding: 100px 190px;
+    display: flex;
+    background: #f8f9fa;
+    width: 100%;
+    .roomSelect {
+      width: 75%;
+      .roomCards {
+        @include center(center, center);
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+        width: 100%;
+        .roomCard {
+          background-color: #fff;
+          margin-right: 30px;
+          margin-bottom: 30px;
+          width: 29%;
+          height: 550px;
+          border: 1px solid rgba(194, 184, 184, 0.8);
+          cursor: pointer;
+          .roomCardPhoto {
+            width: 100%;
+            height: 250px;
+            margin-bottom: 27px;
+            position: relative;
+            a {
+              width: 100%;
+              height: 100%;
+              @include center(center, center);
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+              div {
+                position: absolute;
+                z-index: 13;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                opacity: 0;
+                width: 21%;
+                height: 50px;
+                border-radius: 50%;
+                background: #fff;
+                margin: auto;
+                @include center(center, center);
+                i {
+                  font-size: 15px;
+                }
+              }
+            }
+          }
+          .roomCardDescription {
+            a {
+              margin-bottom: 15px;
+              @include center(center, center);
+              h4 {
+                color: #000;
+                font-size: 22px;
+                line-height: 1.5;
+                font-weight: 400;
+                text-align: center;
+                font-family: "Poppins", sans-serif;
+              }
+            }
+            .roomCardDescriptionPrice {
+              @include center(center, center);
+              flex-direction: column;
+              margin-bottom: 16px;
+              div {
+                @include center(center, center);
+                margin-bottom: 20px;
+                h5 {
+                  color: #000 !important;
+                  margin-right: 8px;
+                  font-size: 26px;
+                  line-height: 1.8;
+                  font-weight: 400;
+                  font-family: "Poppins", sans-serif;
+                  position: relative;
+                  &::after {
+                    position: absolute;
+                    bottom: -3px;
+                    left: 0;
+                    right: 0;
+                    width: 100%;
+                    height: 2px;
+                    content: "";
+                    background: #d1ba90;
+                  }
+                }
+                span {
+                  color: #b3b3b3 !important;
+                  text-align: center;
+                  font-size: 15px;
+                  line-height: 1.8;
+                  font-weight: 400;
+                  font-family: "Poppins", sans-serif;
+                }
+              }
+              ul {
+                text-align: center;
+                li {
+                  color: #000;
+                  font-size: 14px;
+                  font-family: "Poppins", Arial, sans-serif;
+                  line-height: 1.8;
+                  font-weight: 400;
+                  span {
+                    color: #8d703b;
+                    font-size: 14px;
+                    font-family: "Poppins", Arial, sans-serif;
+                    line-height: 1.8;
+                    font-weight: 400;
+                  }
+                }
+              }
+            }
+          }
+          hr {
+            width: 100%;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+          }
+          a {
+            @include center(center, center);
+            text-align: center;
+            font-size: 15px;
+            line-height: 1.8;
+            font-weight: 400;
+            color: #000;
+            i {
+              color: #000;
+              line-height: 1;
+              font-size: 15px;
+            }
+          }
+          &:hover {
+            .roomCardPhoto {
+              a {
+                div {
+                  opacity: 100;
+                  @include center(center, center);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .roomArray {
+      display: flex;
+      flex-direction: column;
+      width: 25%;
+      .roomChoose {
+        border: 1px solid #e6e6e6;
+        background: #f8f9fa;
+        h3 {
+          padding: 10px;
+          font-size: 18px;
+          font-weight: 400;
+        }
+        form {
+          padding: 0 20px;
+          .inDate {
+            width: 100%;
+            padding-top: 20px;
+            input {
+              border: 1px solid #e6e6e6 !important;
+              height: 50px;
+              color: #000;
+              font-size: 14px;
+              width: 100%;
+            }
+          }
+          .outDate {
+            width: 100%;
+            padding-top: 20px;
+            input {
+              border: 1px solid #e6e6e6 !important;
+              height: 50px;
+              color: #000;
+              font-size: 14px;
+              width: 100%;
+            }
+          }
+          .formRooms {
+            width: 100%;
+            padding-top: 20px;
+            select {
+              font-family: "Poppins", sans-serif;
+              border: 2px solid #e6e6e6 !important;
+              height: 50px;
+              color: #000;
+              font-size: 14px;
+              width: 100%;
+              option {
+                font-family: "Poppins", sans-serif;
+                border: 2px solid #e6e6e6 !important;
+                height: 40px;
+                color: #000;
+                font-size: 14px;
+                width: 100%;
+              }
+            }
+          }
+          .formCustomers {
+            width: 100%;
+            padding-top: 20px;
+            select {
+              border: 2px solid #e6e6e6 !important;
+              height: 50px;
+              color: #000;
+              font-size: 14px;
+              width: 100%;
+              option {
+                border: 2px solid #fff !important;
+                height: 50px;
+                color: #000;
+                font-size: 14px;
+                width: 100%;
+              }
+            }
+          }
+          .formChildren {
+            width: 100%;
+            padding-bottom: 20px;
+            padding-top: 20px;
+            select {
+              padding-top: 10px;
+              border: 2px solid #e6e6e6 !important;
+              height: 50px;
+              color: #000;
+              font-size: 14px;
+              width: 100%;
+              option {
+                height: 50px;
+                color: #000;
+                font-size: 14px;
+                width: 100%;
+              }
+            }
+          }
+          .submitInput {
+            input {
+              margin: 40px 0;
+              @include center(center, center);
+              width: 100%;
+              height: 50px;
+              background: #8d703b;
+              cursor: pointer;
+              font-family: "Poppins", sans-serif;
+              font-weight: 400;
+              font-size: 16px;
+              color: #fff;
+              letter-spacing: 2px;
+              border: 1px solid #8d703b;
+              &:hover {
+                background: #fff;
+                border: 1px solid #8d703b;
+                color: #8d703b;
+              }
+            }
+          }
+        }
+      }
+      .roomRating {
+        margin-top: 30px;
+        border: 1px solid #e6e6e6;
+        padding: 0 30px;
+        h3 {
+          margin-top: 20px;
+          font-size: 18px;
+          line-height: 1.5;
+          color: #000000;
+          font-weight: 400;
+          font-family: "Playfair Display", Arial, serif;
+        }
+        form {
+          div {
+            width: 100%;
+            height: 44px;
+            display: flex;
+            margin: 20px 0;
+            align-items: center;
+            input {
+              margin-right: 10px;
+              font-size: 15px;
+            }
+            label {
+              p {
+                span {
+                  i {
+                    color: #8d703b;
+                    font-size: 15px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // Room Main End
+
+  // Instagram start
+  .instagram {
+    margin-top: 50px ;
+    width: 100%;
+    height: 370px;
+    .instagramHeader {
+      @include center(center, center);
+      margin-bottom: 44px;
+      h2 {
+        font-size: 30px;
+        font-weight: 400;
+        font-family: "Poppins", sans-serif;
+        position: relative;
+        line-height: 1.5;
+        color: #000000;
+        margin-bottom: 0.5rem;
+        margin-top: 0;
+
+        &::before {
+          width: 60%;
+          height: 2px;
+          bottom: -19px;
+          position: absolute;
+          bottom: -15px;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          background: #8d703b;
+          content: "";
+        }
+        span {
+          text-align: center;
+          color: #000;
+          line-height: 1.5;
+          font-size: 30px;
+          font-weight: 400;
+          font-family: "Poppins", sans-serif;
+        }
+        &::after {
+          content: "";
+          width: 80%;
+          height: 2px;
+          position: absolute;
+          bottom: -15px;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          background: #8d703b;
+          margin-bottom: 4px;
+        }
+      }
+    }
+    .instagramPictures {
+      ul {
+        @include center(center, center);
+        li {
+          cursor: pointer;
+          width: 20%;
+          height: 280px;
+          position: relative;
+          .clickable-image {
+            width: 100%;
+            height: 100%;
+          }
+          div {
+            margin: 15px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            opacity: 0;
+            color: transparent;
+            @include center(center, center);
+            i {
+              font-size: 45px;
+              color: #fff;
+            }
+          }
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+          &:hover {
+            div {
+              opacity: 100;
+              background: rgba(0, 0, 0, 0.3);
+              @include center(center, center);
+            }
+          }
+        }
+      }
+    }
+  }
+  // Instagram end
+
+  // Footer Start
+  .footer {
+    background-color: #232323;
+    width: 100%;
+    height: 510px;
+    padding: 0 190px;
+    @include center(center, center);
+    .footerDeluxeHotel {
+      width: 25%;
+      height: 350px;
+      margin-right: 70px;
+      h5 {
+        color: #fff;
+        margin-bottom: 40px;
+        font-size: 18px;
+        font-weight: 400;
+        font-family: "Poppins", sans-serif;
+      }
+      span {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 16px;
+        font-weight: 400;
+        font-family: "Poppins", sans-serif;
+        line-height: 1.8;
+      }
+      .footerSocialWeb {
+        margin-top: 70px;
+        ul {
+          @include center(start, center);
+          li {
+            width: 50px;
+            height: 50px;
+            margin-right: 20px;
+            border-radius: 50%;
+            background-color: #2e2e2e;
+            a {
+              @include center(center, center);
+              text-align: center;
+              width: 100%;
+              height: 100%;
+              i {
+                color: #fff;
+                font-size: 25px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .footerLinks {
+      width: 21%;
+      height: 350px;
+      margin-right: 40px;
+      h5 {
+        color: #fff;
+        margin-bottom: 40px;
+        font-size: 18px;
+        font-weight: 400;
+        font-family: "Poppins", sans-serif;
+      }
+      div {
+        ul {
+          li {
+            margin-bottom: 20px;
+            a {
+              color: rgba(255, 255, 255, 0.7);
+              font-size: 16px;
+              font-weight: 400;
+              font-family: "Poppins", sans-serif;
+              line-height: 1.8;
+              &:hover {
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .footerPrivacy {
+      width: 21%;
+      height: 350px;
+      margin-right: 40px;
+      h5 {
+        color: #fff;
+        margin-bottom: 40px;
+        font-size: 18px;
+        font-weight: 400;
+      }
+      div {
+        ul {
+          li {
+            margin-bottom: 20px;
+            a {
+              color: rgba(255, 255, 255, 0.7);
+              font-size: 16px;
+              font-weight: 400;
+              font-family: "Poppins", sans-serif;
+              line-height: 1.8;
+              &:hover {
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .footerCare {
+      width: 26%;
+      height: 350px;
+      h5 {
+        color: #fff;
+        margin-bottom: 40px;
+        font-size: 18px;
+        font-weight: 400;
+        font-family: "Poppins", sans-serif;
+      }
+      .footerQuestion {
+        width: 100%;
+        ul {
+          li {
+            margin-bottom: 10px;
+            .footerAddress {
+              width: 100%;
+              ul {
+                @include center(start, baseline);
+                li {
+                  display: flex;
+                  margin-right: 20px;
+                  i {
+                    color: #fff;
+                  }
+                  p {
+                    color: rgba(255, 255, 255, 0.7);
+                    font-size: 16px;
+                    font-weight: 400;
+                    font-family: "Poppins", sans-serif;
+                    line-height: 1.8;
+                  }
+                }
+              }
+            }
+            .footerNumber {
+              width: 100%;
+              ul {
+                @include center(start, center);
+                li {
+                  display: flex;
+                  margin-right: 10px;
+                  a {
+                    i {
+                      color: #fff;
+                    }
+                  }
+                  a {
+                    color: #fff;
+                    span {
+                      font-size: 16px;
+                      font-weight: 400;
+                      font-family: "Poppins", sans-serif;
+                      line-height: 1.8;
+                    }
+                  }
+                }
+              }
+            }
+            .footerEmail {
+              width: 100%;
+              ul {
+                @include center(start, center);
+                li {
+                  display: flex;
+                  margin-right: 10px;
+                  a {
+                    i {
+                    }
+                  }
+                  a {
+                    color: #fff;
+                    span {
+                      font-size: 16px;
+                      font-weight: 400;
+                      font-family: "Poppins", sans-serif;
+                      line-height: 1.8;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // Footer End
+
+  @media (max-width: 786px) {
+    // Header Start
+    .header {
+      position: fixed;
+      z-index: 1000;
+      top: 0;
+      background: #232323;
+      nav {
+        padding: 0 10px;
+        label {
+          a {
+            display: inline-block;
+            padding-top: 0.3125rem;
+            padding-bottom: 0.3125rem;
+            margin-right: 1rem;
+            font-size: 1.25rem;
+            line-height: inherit;
+            white-space: nowrap;
+          }
+        }
+        ul {
+          position: fixed;
+          // padding: 0 10px;
+          width: 100%;
+          top: -600px;
+          height: 50vh;
+          //   float: right;
+          background: #232323;
+          li {
+            display: block;
+            margin-top: 20px;
+            line-height: 30px;
+            color: rgba(255, 255, 255, 0.7);
+          }
+        }
+        ul.show {
+          left: 0;
+          top: 70px;
+        }
+        #icon {
+          display: block;
+          border: none;
+          color: rgba(255, 255, 255, 0.5) !important;
+          cursor: pointer;
+          padding-right: 0;
+          text-transform: uppercase;
+          font-size: 16px;
+          letter-spacing: 0.1em;
+        }
+      }
+    }
+    .header.active {
+      position: fixed;
+      z-index: 1000;
+      top: 0;
+      background: white;
+      nav {
+        padding: 0 10px;
+        label {
+          a {
+            font-size: 20px;
+          }
+        }
+        ul {
+          position: fixed;
+          padding: 0 10px;
+          width: 100%;
+          top: -100%;
+          height: 50vh;
+          background: white;
+          li {
+            color: black;
+            display: block;
+            margin: 20px 0;
+            line-height: 30px;
+            text-transform: none;
+          }
+        }
+        ul.show {
+          left: 0;
+          top: 70px;
+        }
+        #icon {
+          display: block;
+          display: block;
+          border: none;
+          color: rgba(0, 0, 0, 0.5) !important;
+          border-color: rgba(0, 0, 0, 0.5) !important;
+          cursor: pointer;
+          padding-right: 0;
+          text-transform: uppercase;
+          font-size: 16px;
+          letter-spacing: 0.1em;
+        }
+      }
+    }
+    // Header End
+
+
+    // Room Main Start
+    .roomProperties{
+      padding: 50px 10px 0 10px;
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      .roomSelect{
+        width: 100%;
+        .roomCards{
+          width: 100%;
+          .roomCard{
+            width: 45%;
+          }
+        }
+      }
+      .roomArray{
+        width: 100%;
+      }
+    }
+    // Room Main End
+
+    // Footer Start
+    .footer {
+      // width: 100%;
+      padding: 0 25px;
+    }
+    // Footer End
+  }
+
+  @media (max-width: 480px){
+
+
+    // Room Main Start
+    .roomProperties{
+      padding: 50px 10px 0 10px;
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      .roomSelect{
+        width: 100%;
+        .roomCards{
+          width: 100%;
+          .roomCard{
+            width: 98%;
+            margin-right: 0;
+          }
+        }
+      }
+      .roomArray{
+        width: 100%;
+      }
+    }
+    // Room Main End
+
+    // Instagram start
+    .instagram {
+      // margin-bottom: 40px;
+      width: 100%;
+      height: auto;
+      .instagramHeader {
+        @include center(center, center);
+        margin-bottom: 44px;
+        h2 {
+          font-size: 30px;
+          font-weight: 400;
+          font-family: "Poppins", sans-serif;
+          position: relative;
+          line-height: 1.5;
+          color: #000000;
+          margin-bottom: 0.5rem;
+          margin-top: 0;
+
+          &::before {
+            width: 60%;
+            height: 2px;
+            bottom: -19px;
+            position: absolute;
+            bottom: -15px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            background: #8d703b;
+            content: "";
+          }
+          span {
+            text-align: center;
+            color: #000;
+            line-height: 1.5;
+            font-size: 30px;
+            font-weight: 400;
+            font-family: "Poppins", sans-serif;
+          }
+          &::after {
+            content: "";
+            width: 80%;
+            height: 2px;
+            position: absolute;
+            bottom: -15px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            background: #8d703b;
+            margin-bottom: 4px;
+          }
+        }
+      }
+      .instagramPictures {
+        ul {
+          @include center(center, center);
+          flex-wrap: wrap;
+          width: 100%;
+          li {
+            cursor: pointer;
+            width: 100%;
+            height: 280px;
+            position: relative;
+            .clickable-image {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+    // Instagram end
+
+    // Footer Start
+    .footer {
+      background-color: #232323;
+      width: 100%;
+      height: auto;
+      padding: 0 10px;
+      @include center(center, center);
+      flex-wrap: wrap;
+      .footerDeluxeHotel {
+        padding-top: 80px;
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        h5 {
+          color: #fff;
+          margin-bottom: 40px;
+          font-size: 18px;
+          font-weight: 400;
+          font-family: "Poppins", sans-serif;
+        }
+        span {
+          color: rgba(255, 255, 255, 0.7);
+          font-size: 16px;
+          font-weight: 400;
+          font-family: "Poppins", sans-serif;
+          line-height: 1.8;
+        }
+        .footerSocialWeb {
+          margin-top: 20px;
+          margin-bottom: 50px;
+          ul {
+            @include center(start, center);
+            li {
+              width: 50px;
+              height: 50px;
+              margin-right: 20px;
+              border-radius: 50%;
+              background-color: #2e2e2e;
+              a {
+                @include center(center, center);
+                text-align: center;
+                width: 100%;
+                height: 100%;
+                i {
+                  color: #fff;
+                  font-size: 25px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .footerLinks {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        h5 {
+          color: #fff;
+          margin-bottom: 40px;
+          font-size: 18px;
+          font-weight: 400;
+          font-family: "Poppins", sans-serif;
+        }
+        div {
+          ul {
+            li {
+              margin-bottom: 20px;
+              a {
+                color: rgba(255, 255, 255, 0.7);
+                font-size: 16px;
+                font-weight: 400;
+                font-family: "Poppins", sans-serif;
+                line-height: 1.8;
+                &:hover {
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+      }
+  
+      .footerPrivacy {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        h5 {
+          color: #fff;
+          margin-bottom: 40px;
+          font-size: 18px;
+          font-weight: 400;
+        }
+        div {
+          ul {
+            li {
+              margin-bottom: 20px;
+              a {
+                color: rgba(255, 255, 255, 0.7);
+                font-size: 16px;
+                font-weight: 400;
+                font-family: "Poppins", sans-serif;
+                line-height: 1.8;
+                &:hover {
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+      }
+  
+      .footerCare {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        h5 {
+          color: #fff;
+          margin-bottom: 40px;
+          font-size: 18px;
+          font-weight: 400;
+          font-family: "Poppins", sans-serif;
+        }
+        .footerQuestion {
+          width: 100%;
+          ul {
+            li {
+              margin-bottom: 10px;
+              .footerAddress {
+                width: 100%;
+                ul {
+                  @include center(start, baseline);
+                  li {
+                    display: flex;
+                    margin-right: 20px;
+                    i {
+                      color: #fff;
+                    }
+                    p {
+                      color: rgba(255, 255, 255, 0.7);
+                      font-size: 16px;
+                      font-weight: 400;
+                      font-family: "Poppins", sans-serif;
+                      line-height: 1.8;
+                    }
+                  }
+                }
+              }
+              .footerNumber {
+                width: 100%;
+                ul {
+                  @include center(start, center);
+                  li {
+                    display: flex;
+                    margin-right: 10px;
+                    a {
+                      i {
+                        color: #fff;
+                      }
+                    }
+                    a {
+                      color: #fff;
+                      span {
+                        font-size: 16px;
+                        font-weight: 400;
+                        font-family: "Poppins", sans-serif;
+                        line-height: 1.8;
+                      }
+                    }
+                  }
+                }
+              }
+              .footerEmail {
+                width: 100%;
+                ul {
+                  @include center(start, center);
+                  li {
+                    display: flex;
+                    margin-right: 10px;
+                    a {
+                      i {
+                      }
+                    }
+                    a {
+                      color: #fff;
+                      span {
+                        font-size: 16px;
+                        font-weight: 400;
+                        font-family: "Poppins", sans-serif;
+                        line-height: 1.8;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    // Footer End
+  }
+}

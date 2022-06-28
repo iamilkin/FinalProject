@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome start -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <!-- Font Awesome End -->
+
+    <!-- DataPicker Start-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <!-- DataPicker End -->
+
+    <!-- Google Fonts Start-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet"/>
+    <!-- Google Fonts End -->
+
+    <!-- Style start -->
+    <link rel="stylesheet" href="./rooms.css">
+    <!-- Style end -->
+
+
+    <title>Rooms</title>
+
+    <style>
+        .wrapper{
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px 25px 40px;
+}
+.price-input{
+  width: 100%;
+  display: flex;
+  margin: 30px 0 35px;
+}
+.price-input .field{
+  display: flex;
+  width: 100%;
+  height: 30px;
+  align-items: center;
+}
+.field input{
+  width: 100%;
+  height: 100%;
+  outline: none;
+  font-size: 14px;
+  margin-left: 12px;
+  text-align: center;
+  border: 1px solid #999;
+  -moz-appearance: textfield;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.slider{
+  height: 5px;
+  position: relative;
+  background: #ddd;
+  border-radius: 5px;
+}
+.slider .progress{
+  height: 100%;
+  left: 25%;
+  right: 25%;
+  position: absolute;
+  border-radius: 5px;
+  background: #8d703b;
+}
+.range-input{
+  position: relative;
+}
+.range-input input{
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  top: -5px;
+  background: none;
+  pointer-events: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+input[type="range"]::-webkit-slider-thumb{
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  background: #8d703b;
+  pointer-events: auto;
+  -webkit-appearance: none;
+  box-shadow: 0 0 6px rgba(0,0,0,0.05);
+}
+input[type="range"]::-moz-range-thumb{
+  height: 17px;
+  width: 17px;
+  border: none;
+  border-radius: 50%;
+  background: #8d703b;
+  pointer-events: auto;
+  -moz-appearance: none;
+  box-shadow: 0 0 6px rgba(0,0,0,0.05);
+}
+    </style>
+</head>
+<body>
+    
+    <!-- Header start -->
+    <header class="header">
+        <nav>
+            <label for="logo"><a href="/index.html">Deluxe</a></label>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="http://127.0.0.1:5501/Assets/pages/Rooms/rooms.html">Rooms</a></li>
+                <li><a href="http://127.0.0.1:5501/Assets/pages/Restaurant/restaurant.html">Restaurant</a></li>
+                <li><a href="http://127.0.0.1:5501/Assets/pages/About/about.html">About</a></li>
+                <li><a href="http://127.0.0.1:5501/Assets/pages/Blog/blog.html">Blog</a></li>
+                <li><a href="http://127.0.0.1:5501/Assets/pages/Contact/contact.html">Contact</a></li>
+            </ul>
+            <label id="icon" for=""><i class="fa fas fa-bars"></i> Menu</label>
+        </nav>
+    </header>
+      <!-- Header End -->
+
+
+      <!-- Rooms Entrance Start -->
+      <section>
+          <div class="entrance">
+              <figure>
+                  <img src="/Assets/Photos/Home/xbg_1.jpg.pagespeed.ic.JNXGBJeVlA.webp" alt="">
+              </figure>
+
+              <div class="entranceDesc">
+                  <div class="entranceNav">
+                      <a href="http://127.0.0.1:5501/index.html">Home</a>
+                      <span>About</span>
+                  </div>
+                  <h1>Rooms</h1>
+              </div>
+          </div>
+      </section>
+
+      <!-- Rooms Entrance End -->
+
+<!-- Rooms Start -->
+      <section>
+          <div class="roomProperties">
+              <div class="roomSelect">
+                <div class="roomCards">
+                    <div class="roomCard">
+                        <div class="roomCardPhoto">
+                            <a href="http://127.0.0.1:5501/Assets/pages/Rooms/Single%20Room/singleroom.html">
+                                <img src="/Assets/Photos/Rooms/xroom-1.jpg.pagespeed.ic.0q4Bp6Qeo7.webp" alt="">
+                                <div>
+                                    <i class="fa fa-light fa-magnifying-glass"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="roomCardDescription">
+                            <a href="http://127.0.0.1:5501/Assets/pages/Rooms/Single%20Room/singleroom.html">
+                                <h4>Suite Room</h4>
+                            </a>
+                            <div class="roomCardDescriptionPrice">
+                                <div>
+                                    <h5>$120.00</h5>
+                                <span>per night</span>
+                                </div>
+                                <ul>
+                                    <li><span>Max:</span> 3 persons</li>
+                                    <li><span>Size:</span> 45 m2</li>
+                                    <li><span>View:</span> Sea View</li>
+                                    <li><span>Bed:</span> 1</li>
+                                </ul>
+                            </div>
+                            <hr>
+                            <a href="http://127.0.0.1:5501/Assets/pages/Rooms/Single%20Room/singleroom.html">Book Now<i class="fa fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="roomCard">
+                        <div class="roomCardPhoto">
+                            <a href="http://127.0.0.1:5501/Assets/pages/Rooms/Single%20Room/singleroom.html">
+                                <img src="/Assets/Photos/Rooms/xroom-2.jpg.pagespeed.ic.qQEQzEZcIj.webp" alt="">
+                                <div>
+                                    <i class="fa fa-light fa-magnifying-glass"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="roomCardDescription">
+                            <a href="http://127.0.0.1:5501/Assets/pages/Rooms/Single%20Room/singleroom.html">
+                                <h4>Family Room</h4>
+                            </a>
+                            <div class="roomCardDescriptionPrice">
+                                <div>
+                                    <h5>$20.00</h5>
+                                <span>per night</span>
+                                </div>
+                                <ul>
+                                    <li><span>Max:</span> 3 persons</li>
+                                    <li><span>Size:</span> 45 m2</li>
+                                    <li><span>View:</span> Sea View</li>
+                                    <li><span>Bed:</span> 1</li>
+                                </ul>
+                            </div>
+                            <hr>
+                            <a href="http://127.0.0.1:5501/Assets/pages/Rooms/Single%20Room/singleroom.html">Book Now<i class="fa fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="roomCard">
+                        <div class="roomCardPhoto">
+                            <a href="http://127.0.0.1:5501/Assets/pages/Rooms/Single%20Room/singleroom.html">
+                                <img src="/Assets/Photos/Rooms/xroom-3.jpg.pagespeed.ic.-BqmSKjZKz.webp" alt="">
+                                <div>
+                                    <i class="fa fa-light fa-magnifying-glass"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="roomCardDescription">
+                            <a href="http://127.0.0.1:5501/Assets/pages/Rooms/Single%20Room/singleroom.html">
+                                <h4>Deluxe Room</h4>
+                            </a>
+                            <div class="roomCardDescriptionPrice">
+                                <div>
+                                    <h5>$150.00</h5>
+                                <span>per night</span>
+                                </div>
+                                <ul>
+                                    <li><span>Max:</span> 5 persons</li>
+                                    <li><span>Size:</span> 45 m2</li>
+                                    <li><span>View:</span> Sea View</li>
+                                    <li><span>Bed:</span> 2</li>
+                                </ul>
+                            </div>
+                            <hr>
+                            <a href="http://127.0.0.1:5501/Assets/pages/Rooms/Single%20Room/singleroom.html">Book Now<i class="fa fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="roomCard">
+                        <div class="roomCardPhoto">
+                            <a href="http://127.0.0.1:5501/Assets/pages/Rooms/Single%20Room/singleroom.html">
+                                <img src="/Assets/Photos/Rooms/xroom-4.jpg.pagespeed.ic.5v9gH2L7pP.webp" alt="">
+                                <div>
+                                    <i class="fa fa-light fa-magnifying-glass"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="roomCardDescription">
+                            <a href="http://127.0.0.1:5501/Assets/pages/Rooms/Single%20Room/singleroom.html">
+                                <h4>Classic Room</h4>
+                            </a>
+                            <div class="roomCardDescriptionPrice">
+                                <div>
+                                    <h5>$130.00</h5>
+                                <span>per night</span>
+                                </div>
+                                <ul>
+                                    <li><span>Max:</span> 5 persons</li>
+                                    <li><span>Size:</span> 45 m2</li>
+                                    <li><span>View:</span> Sea View</li>
+                                    <li><span>Bed:</span> 2</li>
+                                </ul>
+                            </div>
+                            <hr>
+                            <a href="http://127.0.0.1:5501/Assets/pages/Rooms/Single%20Room/singleroom.html">Book Now<i class="fa fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="roomCard">
+                        <div class="roomCardPhoto">
+                            <a href="http://127.0.0.1:5501/Assets/pages/Rooms/Single%20Room/singleroom.html">
+                                <img src="/Assets/Photos/Rooms/xroom-5.jpg.pagespeed.ic.teuAgd-yoQ.webp" alt="">
+                                <div>
+                                    <i class="fa fa-light fa-magnifying-glass"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="roomCardDescription">
+                            <a href="http://127.0.0.1:5501/Assets/pages/Rooms/Single%20Room/singleroom.html">
+                                <h4>Superior Room</h4>
+                            </a>
+                            <div class="roomCardDescriptionPrice">
+                                <div>
+                                    <h5>$300.00</h5>
+                                <span>per night</span>
+                                </div>
+                                <ul>
+                                    <li><span>Max:</span> 6 persons</li>
+                                    <li><span>Size:</span> 45 m2</li>
+                                    <li><span>View:</span> Sea View</li>
+                                    <li><span>Bed:</span> 3</li>
+                                </ul>
+                            </div>
+                            <hr>
+                            <a href="http://127.0.0.1:5501/Assets/pages/Rooms/Single%20Room/singleroom.html">Book Now<i class="fa fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="roomCard">
+                        <div class="roomCardPhoto">
+                            <a href="http://127.0.0.1:5501/Assets/pages/Rooms/Single%20Room/singleroom.html">
+                                <img src="/Assets/Photos/Rooms/xroom-6.jpg.pagespeed.ic.KiztQkl1vI.webp" alt="">
+                                <div>
+                                    <i class="fa fa-light fa-magnifying-glass"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="roomCardDescription">
+                            <a href="http://127.0.0.1:5501/Assets/pages/Rooms/Single%20Room/singleroom.html">
+                                <h4>Luxury Room</h4>
+                            </a>
+                            <div class="roomCardDescriptionPrice">
+                                <div>
+                                    <h5>$500.00</h5>
+                                <span>per night</span>
+                                </div>
+                                <ul>
+                                    <li><span>Max:</span> 5 persons</li>
+                                    <li><span>Size:</span> 45 m2</li>
+                                    <li><span>View:</span> Sea View</li>
+                                    <li><span>Bed:</span> 2</li>
+                                </ul>
+                            </div>
+                            <hr>
+                            <a href="http://127.0.0.1:5501/Assets/pages/Rooms/Single%20Room/singleroom.html">Book Now<i class="fa fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="roomArray">
+                  <div class="roomChoose">
+                      <h3>Advanced Search</h3>
+                      <form action="#" class="formService">
+                    <div class="inDate">
+                      <input type="text" placeholder="Check-in Date" required />
+                    </div>
+                    <div class="outDate">
+                      <input type="text" placeholder="Check-out Date" required />
+                    </div>
+                    <div class="formRooms">
+                      <select name id class="formRoom" required>
+                        <option value>Room Type</option>
+                        <option value>Suite</option>
+                        <option value>Family Room</option>
+                        <option value>Deluxe Room</option>
+                        <option value>Classic Room</option>
+                        <option value>Superior Room</option>
+                        <option value>Luxury Room</option>
+                      </select>
+                    </div>
+                    <div class="formCustomers">
+                      <select name id class="formCustomer" required>
+                        <option value>0 Adult</option>
+                        <option value>1 Adult</option>
+                        <option value>2 Adult</option>
+                        <option value>3 Adult</option>
+                        <option value>4 Adult</option>
+                        <option value>5 Adult</option>
+                        <option value>6 Adult</option>
+                      </select>
+                    </div>
+                    <div class="formChildren">
+                      <select name id class="formChildren" required>
+                        <option value>0 Children</option>
+                        <option value>1 Children</option>
+                        <option value>2 Children</option>
+                        <option value>3 Children</option>
+                        <option value>4 Children</option>
+                        <option value>5 Children</option>
+                        <option value>6 Children</option>
+                      </select>
+                    </div>
+                    <div class="wrapper">
+                        <div class="price-input">
+                          <div class="field">
+                            <input type="number" class="input-min" value="2500">
+                          </div>
+                          <div class="field">
+                            <input type="number" class="input-max" value="7500">
+                          </div>
+                        </div>
+                        <div class="slider">
+                          <div class="progress"></div>
+                        </div>
+                        <div class="range-input">
+                          <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                          <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                        </div>
+                      </div>
+                    <div class="submitInput">
+                      <input type="submit" class="submit" value="Search" />
+                    </div>
+                  </form>
+                </div>
+                  <div class="roomRating">
+                      <h3>Star Rating</h3>
+                      <form action="#">
+                          <div>
+                              <input type="checkbox">
+                              <label for="#">
+                                  <p>
+                                      <span>
+                                        <i class="fa fa-solid fa-star"></i>
+                                        <i class="fa fa-solid fa-star"></i>
+                                        <i class="fa fa-solid fa-star"></i>
+                                        <i class="fa fa-solid fa-star"></i>
+                                        <i class="fa fa-solid fa-star"></i>
+                                      </span>
+                                  </p>
+                              </label>
+                          </div>
+                          <div>
+                              <input type="checkbox">
+                              <label for="#">
+                                  <p>
+                                      <span>
+                                        <i class="fa fa-solid fa-star"></i>
+                                        <i class="fa fa-solid fa-star"></i>
+                                        <i class="fa fa-solid fa-star"></i>
+                                        <i class="fa fa-solid fa-star"></i>
+                                        <i class="fa fa-light fa-star"></i>
+                                      </span>
+                                  </p>
+                              </label>
+                          </div>
+                          <div>
+                              <input type="checkbox">
+                              <label for="#">
+                                  <p>
+                                      <span>
+                                        <i class="fa fa-solid fa-star"></i>
+                                        <i class="fa fa-solid fa-star"></i>
+                                        <i class="fa fa-solid fa-star"></i>
+                                        <i class="fa fa-light fa-star"></i>
+                                        <i class="fa fa-light fa-star"></i>
+                                      </span>
+                                  </p>
+                              </label>
+                          </div>
+                          <div>
+                              <input type="checkbox">
+                              <label for="#">
+                                  <p>
+                                      <span>
+                                        <i class="fa fa-solid fa-star"></i>
+                                        <i class="fa fa-solid fa-star"></i>
+                                        <i class="fa fa-light fa-star"></i>
+                                        <i class="fa fa-light fa-star"></i>
+                                        <i class="fa fa-light fa-star"></i>
+                                      </span>
+                                  </p>
+                              </label>
+                          </div>
+                          <div>
+                              <input type="checkbox">
+                              <label for="#">
+                                  <p>
+                                      <span>
+                                        <i class="fa fa-solid fa-star"></i>
+                                        <i class="fa fa-light fa-star"></i>
+                                        <i class="fa fa-light fa-star"></i>
+                                        <i class="fa fa-light fa-star"></i>
+                                        <i class="fa fa-light fa-star"></i>
+                                      </span>
+                                  </p>
+                              </label>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <!-- Rooms End -->
+
+
+
+      <!-- Instagram start -->
+    <section>
+      <div class="instagram">
+          <div class="instagramHeader">
+              <h2><span>Instagram</span></h2>
+          </div>
+          <div class="instagramPictures">
+            <ul>
+                <li>
+                    <img class="clickable-image" id="theImage" onClick="makeFullSc()" src="/Assets/Photos/Home/Instagram/xinsta-1.jpg.pagespeed.ic.z9tCWmWPKS.webp" alt="">
+                    <div>
+                        <i class="fa fa-brands fa-instagram"></i>
+                    </div>
+                </li>
+                <li>
+                    <img class="clickable-image" id="theGirl" onClick="makeFullScr()" src="/Assets/Photos/Home/Instagram/xinsta-2.jpg.pagespeed.ic.ebWPeomeew.webp" alt="">
+                    <div>
+                        <i class="fa fa-brands fa-instagram"></i>
+                    </div>
+                </li>
+                <li>
+                    <img class="clickable-image" id="theSurf" onClick="makeFullScre()" src="/Assets/Photos/Home/Instagram/xinsta-3.jpg.pagespeed.ic.IvRP9vKCkR.webp" alt="">
+                    <div>
+                        <i class="fa fa-brands fa-instagram"></i>
+                    </div>
+                </li>
+                <li>
+                    <img class="clickable-image" id="theRoom" onClick="makeFullScree()" src="/Assets/Photos/Home/Instagram/xinsta-4.jpg.pagespeed.ic.mFIfX570Xe.webp" alt="">
+                    <div>
+                        <i class="fa fa-brands fa-instagram"></i>
+                    </div>
+                </li>
+                <li><img class="clickable-image" id="thePhoto" onClick="makeFullScreen()" src="/Assets/Photos/Home/Instagram/xinsta-5.jpg.pagespeed.ic.Ch5m2V-S9S.webp" alt="">
+                    <div>
+                    <i class="fa fa-brands fa-instagram"></i>
+                </div>
+            </li>
+            </ul>
+        </div>
+      </div>
+  </section>
+  <!-- Instagram end -->
+
+
+
+  <!-- Footer Start -->
+  <footer class="footer">
+    <div class="footerDeluxeHotel">
+        <h5>Deluxe Hotel</h5>
+        <span>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</span>
+        <div class="footerSocialWeb">
+            <ul>
+                <li><a href=""><i class="fa fa-brands fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa fa-brands fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fa fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footerLinks">
+        <h5>Useful Links</h5>
+        <div>
+            <ul>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Rooms</a></li>
+                <li><a href="">Amenities</a></li>
+                <li><a href="">Gift Card</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footerPrivacy">
+        <h5>Privacy</h5>
+        <div>
+            <ul>
+                <li><a href="">Career</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Services</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footerCare">
+        <h5>Have a Questions?</h5>
+        <div class="footerQuestion">
+            <ul>
+                <li>
+                    <div class="footerAddress">
+                        <ul>
+                            <li><i class="fa fa-solid fa-location-dot"></i></li>
+                            <li><p>	203 Fake St. Mountain View, San Francisco, California, USA</p></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div  class="footerNumber">
+                        <ul>
+                            <li><a href=""><i class="fa fa-solid fa-phone"></i></li>
+                            <li><a href=""><span>+2 392 3929 210</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="footerEmail">
+                        <ul>
+                            <li><a href=""><i class="fa fa-solid fa-envelope"></i></a></li>
+                            <li><a href="">	info@yourdomain.com</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<!-- Footer End -->
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script> flatpickr("input[type=text]", {});</script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/66f8655eb0.js" crossorigin="anonymous"></script>
+    <script src="./rooms.js"></script>
+</body>
+</html>

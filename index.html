@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome start -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <!-- Font Awesome End -->
+
+    <!-- DataPicker Start-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <!-- DataPicker End -->
+    
+    <!-- Swiper Link Start -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <!-- Swiper Link End-->
+    
+    <!-- Google Fonts Start-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet"/>
+    <!-- Google Fonts End -->
+
+
+    <!-- Style Start-->
+    <link rel="stylesheet" href="./main.css" />
+    <!-- Style End-->
+
+    <title>Deluxe Hotel</title>
+
+    <style>
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: rgba(255, 255, 255, 1);
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+        
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+
+  </head>
+  <body >
+      
+    <!-- Header start -->
+    
+    <header class="header">
+        <nav>
+            <label for="logo"><a href="/index.html">Deluxe</a></label>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="http://127.0.0.1:5501/Assets/pages/Rooms/rooms.html">Rooms</a></li>
+                <li><a href="http://127.0.0.1:5501/Assets/pages/Restaurant/restaurant.html">Restaurant</a></li>
+                <li><a href="http://127.0.0.1:5501/Assets/pages/About/about.html">About</a></li>
+                <li><a href="http://127.0.0.1:5501/Assets/pages/Blog/blog.html">Blog</a></li>
+                <li><a href="http://127.0.0.1:5501/Assets/pages/Contact/contact.html">Contact</a></li>
+            </ul>
+            <label id="icon" for=""><i class="fa fas fa-bars"></i> Menu</label>
+        </nav>
+    </header>
+    <!-- Header End -->
+
+    <!-- Our Services start -->
+    <section>
+      <div class="ourServices">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper welcomeHotel">
+              <div class="swiper-slide">
+                <div class="sliderPhotos">
+                    <div class="sliderPhoto1">
+                      <figure>
+                        <img src="./Assets/Photos/Home/xbg_1.jpg.pagespeed.ic.JNXGBJeVlA.webp" alt=""/>
+                      </figure>
+                      <div class="ourServicesText">
+                        <h2>Welcome To Deluxe</h2>
+                        <p>Hotels & Resorts</p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        <div class="formServices">
+          <form action="#" class="formService">
+            <div class="inDate">
+              <label for="">Check-in Date</label>
+              <input type="text" placeholder="Check-in Date" />
+            </div>
+            <div class="outDate">
+              <label for="">Check-out Date</label>
+              <input type="text" placeholder="Check-out Date" />
+            </div>
+            <div class="formRooms">
+              <label for="#">Room</label>
+              <select name id class="formRoom">
+                <option value>Suite</option>
+                <option value>Family Room</option>
+                <option value>Deluxe Room</option>
+                <option value>Classic Room</option>
+                <option value>Superior Room</option>
+                <option value>Luxury Room</option>
+              </select>
+            </div>
+            <div class="formCustomers">
+              <label for="#">Customer</label>
+              <select name id class="formCustomer" >
+                <option value>1 Adult</option>
+                <option value>2 Adult</option>
+                <option value>3 Adult</option>
+                <option value>4 Adult</option>
+                <option value>5 Adult</option>
+                <option value>6 Adult</option>
+              </select>
+            </div>
+            <div class="submitInput">
+              <input type="submit" class="submit" value="Check Availability" />
+            </div>
+          </form>
+        </div>
+      </div>
+      
+    </section>
+    <!-- Our Services end -->
+
+    <!-- About Us Start -->
+    <section>
+      <div class="aboutUs">
+        <div class="aboutUsVideo">
+            <a href="https://vimeo.com/45830194">
+                <img src="./Assets/Photos/Home/xbg_2.jpg.pagespeed.ic.e-nDkaGJ3O.webp" alt=""/>
+                <div>
+                    <i class="fa fa-solid fa-play"></i>
+                </div>
+            </a>
+        </div>
+        <div class="aboutUsWelcome">
+          <div class="aboutUsName">
+            <span>Welcome to Deluxe Hotel</span>
+            <h2>Welcome To Our Hotel</h2>
+          </div>
+          <div class="aboutUsDescription">
+            <p class="aboutUsDescription1">
+              On her way she met a copy. The copy warned the Little Blind Text,
+              that where it came from it would have been rewritten a thousand
+              times and everything that was left from its origin would be the
+              word "and" and the Little Blind Text should turn around and return
+              to its own, safe country. But nothing the copy said could convince
+              her and so it didn’t take long until a few insidious Copy Writers
+              ambushed her, made her drunk with Longe and Parole and dragged her
+              into their agency, where they abused her for their.
+            </p>
+            <p class="aboutUsDescription2">
+              When she reached the first hills of the Italic Mountains, she had
+              a last view back on the skyline of her hometown Bookmarksgrove,
+              the headline of Alphabet Village and the subline of her own road,
+              the Line Lane. Pityful a rethoric question ran over her cheek,
+              then she continued her way.
+            </p>
+          </div>
+          <div class="aboutUsSocialWeb">
+            <ul>
+              <li>
+                <a href=""><i class="fa fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li><a href=""><i class="fa fab fa-google"></i></a></li>
+              <li><a href=""><i class="fa fa-brands fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Us End -->
+
+    <!-- Acquaintance with the Hotel Start -->
+    <section >
+        <div class="acquaintanceHotel">
+            <div>
+                <div class="acquaintanceHotelPic">
+                    <i class="fa-solid fa-bell-concierge"></i>
+                </div>
+                <div class="acquaintanceHotelDescription">
+                    <h3>25/7 Front Desk</h3>
+                    <p>A small river named Duden flows by their place and supplies.</p>
+                </div>
+            </div>
+            <div>
+                <div class="acquaintanceHotelPic">
+                    <i class="fa-brands fa-servicestack"></i>
+                </div>
+                <div class="acquaintanceHotelDescription">
+                    <h3>Restaurant Bar</h3>
+                    <p>A small river named Duden flows by their place and supplies.</p>
+                </div>
+            </div>
+            <div>
+                <div class="acquaintanceHotelPic">
+                    <i class="fa-solid fa-taxi"></i>
+                </div>
+                <div class="acquaintanceHotelDescription">
+                    <h3>Transfer Services</h3>
+                    <p>A small river named Duden flows by their place and supplies.</p>
+                </div>
+            </div>
+            <div>
+                <div class="acquaintanceHotelPic">
+                    <i class="fa-solid fa-spa"></i>
+                </div>
+                <div class="acquaintanceHotelDescription">
+                    <h3>Spa Suites</h3>
+                    <p>A small river named Duden flows by their place and supplies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Acquaintance with the Hotel End -->
+
+    <!-- Rooms Start -->
+    <section>
+        <div class="rooms">
+            <div class="roomHeader">
+                <h2><span>Our Rooms</span></h2>
+            </div>
+            <div class="roomCards">
+                <div class="roomCard">
+                    <div class="roomCardPhoto">
+                        <a href="http://127.0.0.1:5501/Assets/pages/Rooms/rooms.html">
+                            <img src="./Assets/Photos/Rooms/xroom-1.jpg.pagespeed.ic.0q4Bp6Qeo7.webp" alt="">
+                            <div>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="roomCardDescription">
+                        <a href="http://127.0.0.1:5501/Assets/pages/Rooms/rooms.html">
+                            <h4>Suite Room</h4>
+                        </a>
+                        <div class="roomCardDescriptionPrice">
+                            <h5>$120.00</h5>
+                            <span>per night</span>
+                        </div>
+                        <hr>
+                        <a href="http://127.0.0.1:5501/Assets/pages/Rooms/rooms.html">View Room Details
+                            <i class="fa fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Rooms End -->
+
+    <!-- Our Staff start -->
+    <section>
+        <div class="ourStaff">
+            <div class="counters">
+                <div class="counter" data-target="50000">0</div>
+                <p>Happy Guests</p>
+            </div>
+            <div class="counters">
+                <div class="counter" data-target="3000">0</div>
+                <p>Rooms</p>
+            </div>
+            <div class="counters">
+                <div class="counter" data-target="1000">0</div>
+                <p>Staffs</p>
+            </div>
+            <div class="counters">
+                <div class="counter" data-target="100">0</div>
+                <p>Destination</p>
+            </div>
+        </div>
+    </section>
+    <!-- Our Staff end -->
+
+    <!-- People's Feedback start -->
+    <section class="feedbackPeople">
+        <div id="myFeedback" class="swiper mySwiper myFeedback">
+            <div class="swiper-wrapper sliderAPI">
+              <div class="swiper-slide">
+                <div class="feedback">
+                    <div  class="feedbackPhoto">
+                        <figure>
+                            <img src="./Assets/Photos/Home/xperson_1.jpg.pagespeed.ic.a2MnMHMs44.webp" alt="">
+                        </figure>
+                        <span><i class="fa fa-solid fa-quote-left"></i></span>
+                    </div>
+                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                    <h5>Nathan Smith</h5>
+                    <span>Guests</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="feedback">
+                    <div  class="feedbackPhoto">
+                        <figure>
+                            <img src="./Assets/Photos/Home/xperson_1.jpg.pagespeed.ic.a2MnMHMs44.webp" alt="">
+                        </figure>
+                        <span><i class="fa fa-solid fa-quote-left"></i></span>
+                    </div>
+                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                    <h5>Nathan Smith</h5>
+                    <span>Guests</span>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        <div class="swiper-pagination testimonialPagination2"></div>
+
+    </section>
+    <!-- People's Feedback end -->
+
+    <!-- Recent Blog start -->
+    <section>
+        <div class="blog">
+            <div class="blogHeader">
+                <h2><span>Recent Blog</span></h2>
+            </div>
+            <div class="blogCards">
+                <div class="blogCard">
+                        <figure>
+                            <a href="http://127.0.0.1:5501/Assets/pages/Blog/Single%20Blog/single.html">
+                              <img src="./Assets/Photos/Blog/ximage_1.jpg.pagespeed.ic.LnJla8Illi.webp" alt="">
+                            </a>
+                        </figure>
+                    <a href="http://127.0.0.1:5501/Assets/pages/Blog/Single%20Blog/single.html">Even the all-powerful Pointing has no control about the blind texts</a>
+                    <div class="blogFeedback">
+                        <a href="http://127.0.0.1:5501/Assets/pages/Blog/Single%20Blog/single.html"><span>Dec 6, 2018</span></a>
+                        <a href="http://127.0.0.1:5501/Assets/pages/Blog/Single%20Blog/single.html"><span>Admin</span></a>
+                        <a href="http://127.0.0.1:5501/Assets/pages/Blog/Single%20Blog/single.html"><span><i class="fa-solid fa-message"></i>3</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Recent Blog end -->
+
+    <!-- Instagram start -->
+    <section>
+        <div class="instagram">
+            <div class="instagramHeader">
+                <h2><span>Instagram</span></h2>
+            </div>
+            <div class="instagramPictures">
+                <ul>
+                    <li>
+                        <img class="clickable-image" id="theImage" onClick="makeFullSc()" src="./Assets/Photos/Home/Instagram/xinsta-1.jpg.pagespeed.ic.z9tCWmWPKS.webp" alt="">
+                        <div>
+                            <i class="fa fa-brands fa-instagram"></i>
+                        </div>
+                    </li>
+                    <li>
+                        <img class="clickable-image" id="theGirl" onClick="makeFullScr()" src="./Assets/Photos/Home/Instagram/xinsta-2.jpg.pagespeed.ic.ebWPeomeew.webp" alt="">
+                        <div>
+                            <i class="fa fa-brands fa-instagram"></i>
+                        </div>
+                    </li>
+                    <li>
+                        <img class="clickable-image" id="theSurf" onClick="makeFullScre()" src="./Assets/Photos/Home/Instagram/xinsta-3.jpg.pagespeed.ic.IvRP9vKCkR.webp" alt="">
+                        <div>
+                            <i class="fa fa-brands fa-instagram"></i>
+                        </div>
+                    </li>
+                    <li>
+                        <img class="clickable-image" id="theRoom" onClick="makeFullScree()" src="./Assets/Photos/Home/Instagram/xinsta-4.jpg.pagespeed.ic.mFIfX570Xe.webp" alt="">
+                        <div>
+                            <i class="fa fa-brands fa-instagram"></i>
+                        </div>
+                    </li>
+                    <li><img class="clickable-image" id="thePhoto" onClick="makeFullScreen()" src="./Assets/Photos/Home/Instagram/xinsta-5.jpg.pagespeed.ic.Ch5m2V-S9S.webp" alt="">
+                        <div>
+                        <i class="fa fa-brands fa-instagram"></i>
+                    </div>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Instagram end -->
+
+    <!-- Footer Start -->
+    <footer class="footer">
+        <div class="footerDeluxeHotel">
+            <h5>Deluxe Hotel</h5>
+            <span>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</span>
+            <div class="footerSocialWeb">
+                <ul>
+                    <li><a href=""><i class="fa fa-brands fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fa fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerLinks">
+            <h5>Useful Links</h5>
+            <div>
+                <ul>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Rooms</a></li>
+                    <li><a href="">Amenities</a></li>
+                    <li><a href="">Gift Card</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerPrivacy">
+            <h5>Privacy</h5>
+            <div>
+                <ul>
+                    <li><a href="">Career</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Services</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerCare">
+            <h5>Have a Questions?</h5>
+            <div class="footerQuestion">
+                <ul>
+                    <li>
+                        <div class="footerAddress">
+                            <ul>
+                                <li><i class="fa-solid fa-location-dot"></i></li>
+                                <li><p>	203 Fake St. Mountain View, San Francisco, California, USA</p></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div  class="footerNumber">
+                            <ul>
+                                <li><a href=""><i class="fa fa-solid fa-phone"></i></li>
+                                <li><a href=""><span>+2 392 3929 210</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="footerEmail">
+                            <ul>
+                                <li><a href=""><i class="fa fa-solid fa-envelope"></i></a></li>
+                                <li><a href="">	info@yourdomain.com</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script> flatpickr("input[type=text]", {});</script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/66f8655eb0.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1499 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-family: "Poppins", sans-serif;
+}
+
+* ul,
+* li {
+  list-style: none;
+}
+
+* a {
+  text-decoration: none;
+}
+
+* .header {
+  width: 100%;
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  font-family: sans-serif;
+}
+
+* .header nav {
+  padding: 0 190px;
+  height: 80px;
+  width: 100%;
+  background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+* .header nav label a {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: white;
+}
+
+* .header nav ul {
+  float: right;
+}
+
+* .header nav ul li {
+  display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+* .header nav ul li a {
+  font-size: 14px;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 400;
+  opacity: 1 !important;
+}
+
+* .header nav ul li a:hover {
+  color: #8d703b;
+}
+
+* .header nav #icon {
+  color: #ffffff;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: none;
+}
+
+* .header.active {
+  width: 100%;
+  position: fixed;
+  z-index: 99999;
+  font-family: sans-serif;
+}
+
+* .header.active nav {
+  padding: 0 190px;
+  height: 80px;
+  width: 100%;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+* .header.active nav label a {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: black;
+}
+
+* .header.active nav ul {
+  float: right;
+}
+
+* .header.active nav ul li {
+  display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+* .header.active nav ul li a {
+  font-size: 14px;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: black;
+  font-weight: 400;
+  opacity: 1 !important;
+}
+
+* .header.active nav ul li a:hover {
+  color: #8d703b;
+}
+
+* .header.active nav #icon {
+  color: #ffffff;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: none;
+}
+
+* .entrance {
+  position: relative;
+}
+
+* .entrance figure {
+  width: 100%;
+  height: 300px;
+}
+
+* .entrance figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+* .entrance .entranceDesc {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+* .entrance .entranceDesc .entranceNav {
+  text-align: center;
+}
+
+* .entrance .entranceDesc .entranceNav a {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  color: #fff;
+  margin-right: 20px;
+}
+
+* .entrance .entranceDesc .entranceNav span {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+}
+
+* .entrance .entranceDesc h1 {
+  font-weight: 400;
+  color: #fff;
+  font-size: 60px;
+  font-family: "Playfair Display", Arial, serif;
+  line-height: 1.5;
+}
+
+* .roomProperties {
+  padding: 100px 190px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #f8f9fa;
+  width: 100%;
+}
+
+* .roomProperties .roomSelect {
+  width: 75%;
+}
+
+* .roomProperties .roomSelect .roomCards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+* .roomProperties .roomSelect .roomCards .roomCard {
+  background-color: #fff;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  width: 29%;
+  height: 550px;
+  border: 1px solid rgba(194, 184, 184, 0.8);
+  cursor: pointer;
+}
+
+* .roomProperties .roomSelect .roomCards .roomCard .roomCardPhoto {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 27px;
+  position: relative;
+}
+
+* .roomProperties .roomSelect .roomCards .roomCard .roomCardPhoto a {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .roomProperties .roomSelect .roomCards .roomCard .roomCardPhoto a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+* .roomProperties .roomSelect .roomCards .roomCard .roomCardPhoto a div {
+  position: absolute;
+  z-index: 13;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  width: 21%;
+  height: 50px;
+  border-radius: 50%;
+  background: #fff;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .roomProperties .roomSelect .roomCards .roomCard .roomCardPhoto a div i {
+  font-size: 15px;
+}
+
+* .roomProperties .roomSelect .roomCards .roomCard .roomCardDescription a {
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .roomProperties .roomSelect .roomCards .roomCard .roomCardDescription a h4 {
+  color: #000;
+  font-size: 22px;
+  line-height: 1.5;
+  font-weight: 400;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+* .roomProperties .roomSelect .roomCards .roomCard .roomCardDescription .roomCardDescriptionPrice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 16px;
+}
+
+* .roomProperties .roomSelect .roomCards .roomCard .roomCardDescription .roomCardDescriptionPrice div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+* .roomProperties .roomSelect .roomCards .roomCard .roomCardDescription .roomCardDescriptionPrice div h5 {
+  color: #000 !important;
+  margin-right: 8px;
+  font-size: 26px;
+  line-height: 1.8;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+
+* .roomProperties .roomSelect .roomCards .roomCard .roomCardDescription .roomCardDescriptionPrice div h5::after {
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  content: "";
+  background: #d1ba90;
+}
+
+* .roomProperties .roomSelect .roomCards .roomCard .roomCardDescription .roomCardDescriptionPrice div span {
+  color: #b3b3b3 !important;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+* .roomProperties .roomSelect .roomCards .roomCard .roomCardDescription .roomCardDescriptionPrice ul {
+  text-align: center;
+}
+
+* .roomProperties .roomSelect .roomCards .roomCard .roomCardDescription .roomCardDescriptionPrice ul li {
+  color: #000;
+  font-size: 14px;
+  font-family: "Poppins", Arial, sans-serif;
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+* .roomProperties .roomSelect .roomCards .roomCard .roomCardDescription .roomCardDescriptionPrice ul li span {
+  color: #8d703b;
+  font-size: 14px;
+  font-family: "Poppins", Arial, sans-serif;
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+* .roomProperties .roomSelect .roomCards .roomCard hr {
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+* .roomProperties .roomSelect .roomCards .roomCard a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: #000;
+}
+
+* .roomProperties .roomSelect .roomCards .roomCard a i {
+  color: #000;
+  line-height: 1;
+  font-size: 15px;
+}
+
+* .roomProperties .roomSelect .roomCards .roomCard:hover .roomCardPhoto a div {
+  opacity: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .roomProperties .roomArray {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 25%;
+}
+
+* .roomProperties .roomArray .roomChoose {
+  border: 1px solid #e6e6e6;
+  background: #f8f9fa;
+}
+
+* .roomProperties .roomArray .roomChoose h3 {
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+* .roomProperties .roomArray .roomChoose form {
+  padding: 0 20px;
+}
+
+* .roomProperties .roomArray .roomChoose form .inDate {
+  width: 100%;
+  padding-top: 20px;
+}
+
+* .roomProperties .roomArray .roomChoose form .inDate input {
+  border: 1px solid #e6e6e6 !important;
+  height: 50px;
+  color: #000;
+  font-size: 14px;
+  width: 100%;
+}
+
+* .roomProperties .roomArray .roomChoose form .outDate {
+  width: 100%;
+  padding-top: 20px;
+}
+
+* .roomProperties .roomArray .roomChoose form .outDate input {
+  border: 1px solid #e6e6e6 !important;
+  height: 50px;
+  color: #000;
+  font-size: 14px;
+  width: 100%;
+}
+
+* .roomProperties .roomArray .roomChoose form .formRooms {
+  width: 100%;
+  padding-top: 20px;
+}
+
+* .roomProperties .roomArray .roomChoose form .formRooms select {
+  font-family: "Poppins", sans-serif;
+  border: 2px solid #e6e6e6 !important;
+  height: 50px;
+  color: #000;
+  font-size: 14px;
+  width: 100%;
+}
+
+* .roomProperties .roomArray .roomChoose form .formRooms select option {
+  font-family: "Poppins", sans-serif;
+  border: 2px solid #e6e6e6 !important;
+  height: 40px;
+  color: #000;
+  font-size: 14px;
+  width: 100%;
+}
+
+* .roomProperties .roomArray .roomChoose form .formCustomers {
+  width: 100%;
+  padding-top: 20px;
+}
+
+* .roomProperties .roomArray .roomChoose form .formCustomers select {
+  border: 2px solid #e6e6e6 !important;
+  height: 50px;
+  color: #000;
+  font-size: 14px;
+  width: 100%;
+}
+
+* .roomProperties .roomArray .roomChoose form .formCustomers select option {
+  border: 2px solid #fff !important;
+  height: 50px;
+  color: #000;
+  font-size: 14px;
+  width: 100%;
+}
+
+* .roomProperties .roomArray .roomChoose form .formChildren {
+  width: 100%;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+* .roomProperties .roomArray .roomChoose form .formChildren select {
+  padding-top: 10px;
+  border: 2px solid #e6e6e6 !important;
+  height: 50px;
+  color: #000;
+  font-size: 14px;
+  width: 100%;
+}
+
+* .roomProperties .roomArray .roomChoose form .formChildren select option {
+  height: 50px;
+  color: #000;
+  font-size: 14px;
+  width: 100%;
+}
+
+* .roomProperties .roomArray .roomChoose form .submitInput input {
+  margin: 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 50px;
+  background: #8d703b;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: 2px;
+  border: 1px solid #8d703b;
+}
+
+* .roomProperties .roomArray .roomChoose form .submitInput input:hover {
+  background: #fff;
+  border: 1px solid #8d703b;
+  color: #8d703b;
+}
+
+* .roomProperties .roomArray .roomRating {
+  margin-top: 30px;
+  border: 1px solid #e6e6e6;
+  padding: 0 30px;
+}
+
+* .roomProperties .roomArray .roomRating h3 {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #000000;
+  font-weight: 400;
+  font-family: "Playfair Display", Arial, serif;
+}
+
+* .roomProperties .roomArray .roomRating form div {
+  width: 100%;
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .roomProperties .roomArray .roomRating form div input {
+  margin-right: 10px;
+  font-size: 15px;
+}
+
+* .roomProperties .roomArray .roomRating form div label p span i {
+  color: #8d703b;
+  font-size: 15px;
+}
+
+* .instagram {
+  margin-top: 50px;
+  width: 100%;
+  height: 370px;
+}
+
+* .instagram .instagramHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 44px;
+}
+
+* .instagram .instagramHeader h2 {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  line-height: 1.5;
+  color: #000000;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+
+* .instagram .instagramHeader h2::before {
+  width: 60%;
+  height: 2px;
+  bottom: -19px;
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: #8d703b;
+  content: "";
+}
+
+* .instagram .instagramHeader h2 span {
+  text-align: center;
+  color: #000;
+  line-height: 1.5;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+* .instagram .instagramHeader h2::after {
+  content: "";
+  width: 80%;
+  height: 2px;
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: #8d703b;
+  margin-bottom: 4px;
+}
+
+* .instagram .instagramPictures ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .instagram .instagramPictures ul li {
+  cursor: pointer;
+  width: 20%;
+  height: 280px;
+  position: relative;
+}
+
+* .instagram .instagramPictures ul li .clickable-image {
+  width: 100%;
+  height: 100%;
+}
+
+* .instagram .instagramPictures ul li div {
+  margin: 15px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .instagram .instagramPictures ul li div i {
+  font-size: 45px;
+  color: #fff;
+}
+
+* .instagram .instagramPictures ul li img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+* .instagram .instagramPictures ul li:hover div {
+  opacity: 100;
+  background: rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .footer {
+  background-color: #232323;
+  width: 100%;
+  height: 510px;
+  padding: 0 190px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .footer .footerDeluxeHotel {
+  width: 25%;
+  height: 350px;
+  margin-right: 70px;
+}
+
+* .footer .footerDeluxeHotel h5 {
+  color: #fff;
+  margin-bottom: 40px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+* .footer .footerDeluxeHotel span {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.8;
+}
+
+* .footer .footerDeluxeHotel .footerSocialWeb {
+  margin-top: 70px;
+}
+
+* .footer .footerDeluxeHotel .footerSocialWeb ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .footer .footerDeluxeHotel .footerSocialWeb ul li {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  border-radius: 50%;
+  background-color: #2e2e2e;
+}
+
+* .footer .footerDeluxeHotel .footerSocialWeb ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+* .footer .footerDeluxeHotel .footerSocialWeb ul li a i {
+  color: #fff;
+  font-size: 25px;
+}
+
+* .footer .footerLinks {
+  width: 21%;
+  height: 350px;
+  margin-right: 40px;
+}
+
+* .footer .footerLinks h5 {
+  color: #fff;
+  margin-bottom: 40px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+* .footer .footerLinks div ul li {
+  margin-bottom: 20px;
+}
+
+* .footer .footerLinks div ul li a {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.8;
+}
+
+* .footer .footerLinks div ul li a:hover {
+  color: #fff;
+}
+
+* .footer .footerPrivacy {
+  width: 21%;
+  height: 350px;
+  margin-right: 40px;
+}
+
+* .footer .footerPrivacy h5 {
+  color: #fff;
+  margin-bottom: 40px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+* .footer .footerPrivacy div ul li {
+  margin-bottom: 20px;
+}
+
+* .footer .footerPrivacy div ul li a {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.8;
+}
+
+* .footer .footerPrivacy div ul li a:hover {
+  color: #fff;
+}
+
+* .footer .footerCare {
+  width: 26%;
+  height: 350px;
+}
+
+* .footer .footerCare h5 {
+  color: #fff;
+  margin-bottom: 40px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+* .footer .footerCare .footerQuestion {
+  width: 100%;
+}
+
+* .footer .footerCare .footerQuestion ul li {
+  margin-bottom: 10px;
+}
+
+* .footer .footerCare .footerQuestion ul li .footerAddress {
+  width: 100%;
+}
+
+* .footer .footerCare .footerQuestion ul li .footerAddress ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+* .footer .footerCare .footerQuestion ul li .footerAddress ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 20px;
+}
+
+* .footer .footerCare .footerQuestion ul li .footerAddress ul li i {
+  color: #fff;
+}
+
+* .footer .footerCare .footerQuestion ul li .footerAddress ul li p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.8;
+}
+
+* .footer .footerCare .footerQuestion ul li .footerNumber {
+  width: 100%;
+}
+
+* .footer .footerCare .footerQuestion ul li .footerNumber ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .footer .footerCare .footerQuestion ul li .footerNumber ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 10px;
+}
+
+* .footer .footerCare .footerQuestion ul li .footerNumber ul li a i {
+  color: #fff;
+}
+
+* .footer .footerCare .footerQuestion ul li .footerNumber ul li a {
+  color: #fff;
+}
+
+* .footer .footerCare .footerQuestion ul li .footerNumber ul li a span {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.8;
+}
+
+* .footer .footerCare .footerQuestion ul li .footerEmail {
+  width: 100%;
+}
+
+* .footer .footerCare .footerQuestion ul li .footerEmail ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .footer .footerCare .footerQuestion ul li .footerEmail ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 10px;
+}
+
+* .footer .footerCare .footerQuestion ul li .footerEmail ul li a {
+  color: #fff;
+}
+
+* .footer .footerCare .footerQuestion ul li .footerEmail ul li a span {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.8;
+}
+
+@media (max-width: 786px) {
+  * .header {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    background: #232323;
+  }
+  * .header nav {
+    padding: 0 10px;
+  }
+  * .header nav label a {
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+  }
+  * .header nav ul {
+    position: fixed;
+    width: 100%;
+    top: -600px;
+    height: 50vh;
+    background: #232323;
+  }
+  * .header nav ul li {
+    display: block;
+    margin-top: 20px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  * .header nav ul.show {
+    left: 0;
+    top: 70px;
+  }
+  * .header nav #icon {
+    display: block;
+    border: none;
+    color: rgba(255, 255, 255, 0.5) !important;
+    cursor: pointer;
+    padding-right: 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+  }
+  * .header.active {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    background: white;
+  }
+  * .header.active nav {
+    padding: 0 10px;
+  }
+  * .header.active nav label a {
+    font-size: 20px;
+  }
+  * .header.active nav ul {
+    position: fixed;
+    padding: 0 10px;
+    width: 100%;
+    top: -100%;
+    height: 50vh;
+    background: white;
+  }
+  * .header.active nav ul li {
+    color: black;
+    display: block;
+    margin: 20px 0;
+    line-height: 30px;
+    text-transform: none;
+  }
+  * .header.active nav ul.show {
+    left: 0;
+    top: 70px;
+  }
+  * .header.active nav #icon {
+    display: block;
+    display: block;
+    border: none;
+    color: rgba(0, 0, 0, 0.5) !important;
+    border-color: rgba(0, 0, 0, 0.5) !important;
+    cursor: pointer;
+    padding-right: 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+  }
+  * .roomProperties {
+    padding: 50px 10px 0 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+  * .roomProperties .roomSelect {
+    width: 100%;
+  }
+  * .roomProperties .roomSelect .roomCards {
+    width: 100%;
+  }
+  * .roomProperties .roomSelect .roomCards .roomCard {
+    width: 45%;
+  }
+  * .roomProperties .roomArray {
+    width: 100%;
+  }
+  * .footer {
+    padding: 0 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  * .roomProperties {
+    padding: 50px 10px 0 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+  * .roomProperties .roomSelect {
+    width: 100%;
+  }
+  * .roomProperties .roomSelect .roomCards {
+    width: 100%;
+  }
+  * .roomProperties .roomSelect .roomCards .roomCard {
+    width: 98%;
+    margin-right: 0;
+  }
+  * .roomProperties .roomArray {
+    width: 100%;
+  }
+  * .instagram {
+    width: 100%;
+    height: auto;
+  }
+  * .instagram .instagramHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 44px;
+  }
+  * .instagram .instagramHeader h2 {
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    line-height: 1.5;
+    color: #000000;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+  }
+  * .instagram .instagramHeader h2::before {
+    width: 60%;
+    height: 2px;
+    bottom: -19px;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: #8d703b;
+    content: "";
+  }
+  * .instagram .instagramHeader h2 span {
+    text-align: center;
+    color: #000;
+    line-height: 1.5;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+  }
+  * .instagram .instagramHeader h2::after {
+    content: "";
+    width: 80%;
+    height: 2px;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: #8d703b;
+    margin-bottom: 4px;
+  }
+  * .instagram .instagramPictures ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+  * .instagram .instagramPictures ul li {
+    cursor: pointer;
+    width: 100%;
+    height: 280px;
+    position: relative;
+  }
+  * .instagram .instagramPictures ul li .clickable-image {
+    width: 100%;
+    height: 100%;
+  }
+  * .footer {
+    background-color: #232323;
+    width: 100%;
+    height: auto;
+    padding: 0 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  * .footer .footerDeluxeHotel {
+    padding-top: 80px;
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+  }
+  * .footer .footerDeluxeHotel h5 {
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+  }
+  * .footer .footerDeluxeHotel span {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.8;
+  }
+  * .footer .footerDeluxeHotel .footerSocialWeb {
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  * .footer .footerDeluxeHotel .footerSocialWeb ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  * .footer .footerDeluxeHotel .footerSocialWeb ul li {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    border-radius: 50%;
+    background-color: #2e2e2e;
+  }
+  * .footer .footerDeluxeHotel .footerSocialWeb ul li a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+  }
+  * .footer .footerDeluxeHotel .footerSocialWeb ul li a i {
+    color: #fff;
+    font-size: 25px;
+  }
+  * .footer .footerLinks {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+  }
+  * .footer .footerLinks h5 {
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+  }
+  * .footer .footerLinks div ul li {
+    margin-bottom: 20px;
+  }
+  * .footer .footerLinks div ul li a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.8;
+  }
+  * .footer .footerLinks div ul li a:hover {
+    color: #fff;
+  }
+  * .footer .footerPrivacy {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+  }
+  * .footer .footerPrivacy h5 {
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  * .footer .footerPrivacy div ul li {
+    margin-bottom: 20px;
+  }
+  * .footer .footerPrivacy div ul li a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.8;
+  }
+  * .footer .footerPrivacy div ul li a:hover {
+    color: #fff;
+  }
+  * .footer .footerCare {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+  }
+  * .footer .footerCare h5 {
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+  }
+  * .footer .footerCare .footerQuestion {
+    width: 100%;
+  }
+  * .footer .footerCare .footerQuestion ul li {
+    margin-bottom: 10px;
+  }
+  * .footer .footerCare .footerQuestion ul li .footerAddress {
+    width: 100%;
+  }
+  * .footer .footerCare .footerQuestion ul li .footerAddress ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  * .footer .footerCare .footerQuestion ul li .footerAddress ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 20px;
+  }
+  * .footer .footerCare .footerQuestion ul li .footerAddress ul li i {
+    color: #fff;
+  }
+  * .footer .footerCare .footerQuestion ul li .footerAddress ul li p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.8;
+  }
+  * .footer .footerCare .footerQuestion ul li .footerNumber {
+    width: 100%;
+  }
+  * .footer .footerCare .footerQuestion ul li .footerNumber ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  * .footer .footerCare .footerQuestion ul li .footerNumber ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 10px;
+  }
+  * .footer .footerCare .footerQuestion ul li .footerNumber ul li a i {
+    color: #fff;
+  }
+  * .footer .footerCare .footerQuestion ul li .footerNumber ul li a {
+    color: #fff;
+  }
+  * .footer .footerCare .footerQuestion ul li .footerNumber ul li a span {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.8;
+  }
+  * .footer .footerCare .footerQuestion ul li .footerEmail {
+    width: 100%;
+  }
+  * .footer .footerCare .footerQuestion ul li .footerEmail ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  * .footer .footerCare .footerQuestion ul li .footerEmail ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 10px;
+  }
+  * .footer .footerCare .footerQuestion ul li .footerEmail ul li a {
+    color: #fff;
+  }
+  * .footer .footerCare .footerQuestion ul li .footerEmail ul li a span {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.8;
+  }
+}
+/*# sourceMappingURL=rooms.css.map */

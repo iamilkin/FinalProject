@@ -1,0 +1,1724 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-family: "Poppins", sans-serif;
+}
+
+* ul,
+* li {
+  list-style: none;
+}
+
+* a {
+  text-decoration: none;
+}
+
+* .header {
+  width: 100%;
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  font-family: sans-serif;
+}
+
+* .header nav {
+  padding: 0 190px;
+  height: 80px;
+  width: 100%;
+  background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+* .header nav label a {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: white;
+}
+
+* .header nav ul {
+  float: right;
+}
+
+* .header nav ul li {
+  display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+* .header nav ul li a {
+  font-size: 14px;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 400;
+  opacity: 1 !important;
+}
+
+* .header nav ul li a:hover {
+  color: #8d703b;
+}
+
+* .header nav #icon {
+  color: #ffffff;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: none;
+}
+
+* .header.active {
+  width: 100%;
+  position: fixed;
+  z-index: 99999;
+  font-family: sans-serif;
+}
+
+* .header.active nav {
+  padding: 0 190px;
+  height: 80px;
+  width: 100%;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+* .header.active nav label a {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: black;
+}
+
+* .header.active nav ul {
+  float: right;
+}
+
+* .header.active nav ul li {
+  display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+* .header.active nav ul li a {
+  font-size: 14px;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: black;
+  font-weight: 400;
+  opacity: 1 !important;
+}
+
+* .header.active nav ul li a:hover {
+  color: #8d703b;
+}
+
+* .header.active nav #icon {
+  color: #ffffff;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: none;
+}
+
+* .entrance {
+  position: relative;
+}
+
+* .entrance figure {
+  width: 100%;
+  height: 300px;
+}
+
+* .entrance figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+* .entrance .entranceDesc {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+* .entrance .entranceDesc .entranceNav {
+  text-align: center;
+}
+
+* .entrance .entranceDesc .entranceNav a {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  color: #fff;
+  margin-right: 20px;
+}
+
+* .entrance .entranceDesc .entranceNav span {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+}
+
+* .entrance .entranceDesc h1 {
+  font-weight: 400;
+  color: #fff;
+  font-size: 60px;
+  font-family: "Playfair Display", Arial, serif;
+  line-height: 1.5;
+}
+
+* .blog {
+  padding: 0 190px;
+  width: 100%;
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+* .blog .formChoose {
+  width: 68%;
+  margin-right: 50px;
+  position: relative;
+}
+
+* .blog .formChoose h3 {
+  line-height: 1.5;
+  color: #000;
+  font-weight: 400;
+  font-family: "Playfair Display", Arial, serif;
+  font-size: 32px;
+}
+
+* .blog .formChoose figure {
+  margin-top: 30px;
+  width: 100%;
+}
+
+* .blog .formChoose figure img {
+  width: 100%;
+}
+
+* .blog .formChoose .roomAbout {
+  width: 100%;
+}
+
+* .blog .formChoose .roomAbout p {
+  width: 100%;
+  margin-top: 50px;
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: gray;
+}
+
+* .blog .formChoose .roomAbout .roomCharacteristics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 30px;
+}
+
+* .blog .formChoose .roomAbout .roomCharacteristics ul li {
+  padding-right: 50px;
+  color: gray;
+}
+
+* .blog .formChoose .roomAbout .roomCharacteristics ul li span {
+  color: #8d703b;
+}
+
+* .blog .formChoose .roomTour {
+  margin-top: 50px;
+  width: 100%;
+}
+
+* .blog .formChoose .roomTour h3 {
+  line-height: 1.5;
+  color: #000;
+  font-weight: 400;
+  font-family: "Playfair Display", Arial, serif;
+  font-size: 32px;
+}
+
+* .blog .formChoose .roomTour div {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .blog .formChoose .roomTour div a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+* .blog .formChoose .roomTour div a img {
+  width: 100%;
+  height: 100%;
+}
+
+* .blog .formChoose .roomTour div a div {
+  position: absolute;
+  width: 13%;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0.7;
+  top: 40%;
+  bottom: 0;
+  z-index: 13;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .blog .formChoose .roomTour div a div i {
+  font-size: 40px;
+  color: #8d703b;
+}
+
+* .blog .formChoose .roomTour div a div:hover {
+  opacity: 1;
+}
+
+* .blog .formChoose .roomRating {
+  width: 100%;
+  margin-top: 100px;
+}
+
+* .blog .formChoose .roomRating h4 {
+  line-height: 1.5;
+  color: #000;
+  font-weight: 400;
+  font-family: "Playfair Display", Arial, serif;
+  font-size: 24px;
+}
+
+* .blog .formChoose .roomRating form div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 20px;
+}
+
+* .blog .formChoose .roomRating form div input {
+  outline: none;
+  margin-right: 10px;
+  font-size: 15px;
+}
+
+* .blog .formChoose .roomRating form div label p span {
+  padding-right: 10px;
+}
+
+* .blog .formChoose .roomRating form div label p span i {
+  color: #8d703b;
+  font-size: 15px;
+}
+
+* .blog .formChoose .roomAvailable {
+  margin-top: 100px;
+}
+
+* .blog .formChoose .roomAvailable h3 {
+  line-height: 1.5;
+  color: #000;
+  font-weight: 400;
+  font-family: "Playfair Display", Arial, serif;
+  font-size: 24px;
+}
+
+* .blog .formChoose .roomAvailable .roomCards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+* .blog .formChoose .roomAvailable .roomCards .roomCard {
+  background-color: #fff;
+  margin-right: 30px;
+  margin-top: 30px;
+  width: 45%;
+  height: 450px;
+  border: 1px solid rgba(194, 184, 184, 0.8);
+  cursor: pointer;
+}
+
+* .blog .formChoose .roomAvailable .roomCards .roomCard .roomCardPhoto {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 27px;
+  position: relative;
+}
+
+* .blog .formChoose .roomAvailable .roomCards .roomCard .roomCardPhoto a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+* .blog .formChoose .roomAvailable .roomCards .roomCard .roomCardPhoto a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+* .blog .formChoose .roomAvailable .roomCards .roomCard .roomCardPhoto a div {
+  position: absolute;
+  z-index: 13;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #fff;
+  margin: auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .blog .formChoose .roomAvailable .roomCards .roomCard .roomCardPhoto a div i {
+  font-size: 15px;
+}
+
+* .blog .formChoose .roomAvailable .roomCards .roomCard .roomCardDescription a {
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .blog .formChoose .roomAvailable .roomCards .roomCard .roomCardDescription a h4 {
+  color: #000;
+  font-size: 22px;
+  line-height: 1.5;
+  font-weight: 400;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+* .blog .formChoose .roomAvailable .roomCards .roomCard .roomCardDescription .roomCardDescriptionPrice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+* .blog .formChoose .roomAvailable .roomCards .roomCard .roomCardDescription .roomCardDescriptionPrice h5 {
+  color: #000 !important;
+  margin-right: 8px;
+  font-size: 26px;
+  line-height: 1.8;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+
+* .blog .formChoose .roomAvailable .roomCards .roomCard .roomCardDescription .roomCardDescriptionPrice h5::after {
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  content: "";
+  background: #d1ba90;
+}
+
+* .blog .formChoose .roomAvailable .roomCards .roomCard .roomCardDescription .roomCardDescriptionPrice span {
+  color: #b3b3b3 !important;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+* .blog .formChoose .roomAvailable .roomCards .roomCard hr {
+  margin-top: 16px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  unicode-bidi: -webkit-isolate;
+  unicode-bidi: isolate;
+  -webkit-margin-before: 0.5em;
+          margin-block-start: 0.5em;
+  -webkit-margin-after: 0.5em;
+          margin-block-end: 0.5em;
+  overflow: visible;
+  text-align: center;
+}
+
+* .blog .formChoose .roomAvailable .roomCards .roomCard a {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: #000;
+}
+
+* .blog .formChoose .roomAvailable .roomCards .roomCard a i {
+  color: #000;
+  line-height: 1;
+  font-size: 15px;
+}
+
+* .blog .formChoose .roomAvailable .roomCards .roomCard:hover .roomCardPhoto a div {
+  opacity: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .blog .formBlog {
+  width: 30%;
+}
+
+* .blog .formBlog .formSearch {
+  width: 100%;
+}
+
+* .blog .formBlog .formSearch form {
+  padding: 10px;
+  width: 100%;
+  font-family: "Poppins", Arial, sans-serif;
+  background: #f2f2f2;
+}
+
+* .blog .formBlog .formSearch form input {
+  outline: none;
+  width: 100%;
+  height: 52px !important;
+  font-family: "Poppins", Arial, sans-serif;
+  background: #fff;
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: #000;
+  text-align: left;
+  border: 1px solid #e6e6e6;
+}
+
+* .blog .formBlog .formSearch h3 {
+  width: 100%;
+  margin-top: 50px;
+  font-size: 18px;
+  margin-bottom: 15px;
+  line-height: 1.5;
+  color: #000;
+  font-weight: 400;
+  font-family: "Playfair Display", Arial, serif;
+}
+
+* .blog .formBlog .formSearch ul {
+  margin-top: 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+* .blog .formBlog .formSearch ul li {
+  border-bottom: 1px dotted #dee2e6;
+  width: 100%;
+  position: relative;
+  margin-top: 15px;
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: #8d703b;
+}
+
+* .blog .formBlog .formSearch ul li span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 15px;
+  color: #ccc;
+}
+
+* .blog .formBlog .recentBlog {
+  width: 100%;
+  margin-top: 100px;
+}
+
+* .blog .formBlog .recentBlog h3 {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #000;
+  font-weight: 400;
+  font-family: "Playfair Display", Arial, serif;
+}
+
+* .blog .formBlog .recentBlog .blogCards {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+* .blog .formBlog .recentBlog .blogCards .blogCard {
+  padding-top: 30px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+* .blog .formBlog .recentBlog .blogCards .blogCard figure {
+  width: 45%;
+  height: 80px;
+  padding-right: 20px;
+}
+
+* .blog .formBlog .recentBlog .blogCards .blogCard figure a {
+  width: 100%;
+  height: 80px;
+}
+
+* .blog .formBlog .recentBlog .blogCards .blogCard figure a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+* .blog .formBlog .recentBlog .blogCards .blogCard .blogDescription {
+  width: 64%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+* .blog .formBlog .recentBlog .blogCards .blogCard .blogDescription a {
+  width: 100%;
+  padding-bottom: 10px;
+  color: #000;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+* .blog .formBlog .recentBlog .blogCards .blogCard .blogDescription a:hover {
+  color: #7b6233;
+}
+
+* .blog .formBlog .recentBlog .blogCards .blogCard .blogDescription .blogFeedback a {
+  width: 100%;
+}
+
+* .blog .formBlog .recentBlog .blogCards .blogCard .blogDescription .blogFeedback a span {
+  padding-right: 20px;
+  font-size: 12px;
+}
+
+* .blog .formBlog .recentBlog .blogCards .blogCard .blogDescription .blogFeedback a span i {
+  padding-right: 5px;
+  font-size: 12px;
+  color: grey;
+}
+
+* .blog .formBlog .tagCloud {
+  width: 100%;
+  margin-top: 100px;
+}
+
+* .blog .formBlog .tagCloud h3 {
+  padding-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #000;
+  font-weight: 400;
+  font-family: "Playfair Display", Arial, serif;
+}
+
+* .blog .formBlog .tagCloud .tagLinks {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 15px;
+  padding-right: 10px;
+}
+
+* .blog .formBlog .tagCloud .tagLinks a {
+  padding-top: 10px;
+  line-height: 1.8;
+  font-weight: 400;
+  text-align: left;
+  color: #000;
+  padding-right: 10px;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  margin-bottom: 7px;
+  margin-right: 4px;
+  border-radius: 4px;
+  color: #000;
+  border: 1px solid #ccc;
+  font-size: 11px;
+}
+
+* .blog .formBlog .tagCloud .tagLinks a:hover {
+  background: #8d703b;
+  color: #fff;
+}
+
+* .blog .formBlog .paragraph {
+  width: 100%;
+  padding-top: 100px;
+}
+
+* .blog .formBlog .paragraph h3 {
+  padding-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #000;
+  font-weight: 400;
+  font-family: "Playfair Display", Arial, serif;
+}
+
+* .blog .formBlog .paragraph p {
+  font-family: "Poppins", Arial, sans-serif;
+  background: #fff;
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: gray;
+}
+
+* .instagram {
+  margin-top: 150px;
+  width: 100%;
+  height: 370px;
+}
+
+* .instagram .instagramHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 44px;
+}
+
+* .instagram .instagramHeader h2 {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  line-height: 1.5;
+  color: #000000;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+
+* .instagram .instagramHeader h2::before {
+  width: 60%;
+  height: 2px;
+  bottom: -19px;
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: #8d703b;
+  content: "";
+}
+
+* .instagram .instagramHeader h2 span {
+  text-align: center;
+  color: #000;
+  line-height: 1.5;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+* .instagram .instagramHeader h2::after {
+  content: "";
+  width: 80%;
+  height: 2px;
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: #8d703b;
+  margin-bottom: 4px;
+}
+
+* .instagram .instagramPictures ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .instagram .instagramPictures ul li {
+  cursor: pointer;
+  width: 20%;
+  height: 280px;
+  position: relative;
+}
+
+* .instagram .instagramPictures ul li .clickable-image {
+  width: 100%;
+  height: 100%;
+}
+
+* .instagram .instagramPictures ul li div {
+  margin: 15px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .instagram .instagramPictures ul li div i {
+  font-size: 45px;
+  color: #fff;
+}
+
+* .instagram .instagramPictures ul li img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+* .instagram .instagramPictures ul li:hover div {
+  opacity: 100;
+  background: rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .footer {
+  background-color: #232323;
+  width: 100%;
+  height: 510px;
+  padding: 0 190px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .footer .footerDeluxeHotel {
+  width: 25%;
+  height: 350px;
+  margin-right: 70px;
+}
+
+* .footer .footerDeluxeHotel h5 {
+  color: #fff;
+  margin-bottom: 40px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+* .footer .footerDeluxeHotel span {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.8;
+}
+
+* .footer .footerDeluxeHotel .footerSocialWeb {
+  margin-top: 70px;
+}
+
+* .footer .footerDeluxeHotel .footerSocialWeb ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .footer .footerDeluxeHotel .footerSocialWeb ul li {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  border-radius: 50%;
+  background-color: #2e2e2e;
+}
+
+* .footer .footerDeluxeHotel .footerSocialWeb ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+* .footer .footerDeluxeHotel .footerSocialWeb ul li a i {
+  color: #fff;
+  font-size: 25px;
+}
+
+* .footer .footerLinks {
+  width: 21%;
+  height: 350px;
+  margin-right: 40px;
+}
+
+* .footer .footerLinks h5 {
+  color: #fff;
+  margin-bottom: 40px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+* .footer .footerLinks div ul li {
+  margin-bottom: 20px;
+}
+
+* .footer .footerLinks div ul li a {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.8;
+}
+
+* .footer .footerLinks div ul li a:hover {
+  color: #fff;
+}
+
+* .footer .footerPrivacy {
+  width: 21%;
+  height: 350px;
+  margin-right: 40px;
+}
+
+* .footer .footerPrivacy h5 {
+  color: #fff;
+  margin-bottom: 40px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+* .footer .footerPrivacy div ul li {
+  margin-bottom: 20px;
+}
+
+* .footer .footerPrivacy div ul li a {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.8;
+}
+
+* .footer .footerPrivacy div ul li a:hover {
+  color: #fff;
+}
+
+* .footer .footerCare {
+  width: 26%;
+  height: 350px;
+}
+
+* .footer .footerCare h5 {
+  color: #fff;
+  margin-bottom: 40px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+* .footer .footerCare .footerQuestion {
+  width: 100%;
+}
+
+* .footer .footerCare .footerQuestion ul li {
+  margin-bottom: 10px;
+}
+
+* .footer .footerCare .footerQuestion ul li .footerAddress {
+  width: 100%;
+}
+
+* .footer .footerCare .footerQuestion ul li .footerAddress ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+* .footer .footerCare .footerQuestion ul li .footerAddress ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 20px;
+}
+
+* .footer .footerCare .footerQuestion ul li .footerAddress ul li i {
+  color: #fff;
+}
+
+* .footer .footerCare .footerQuestion ul li .footerAddress ul li p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.8;
+}
+
+* .footer .footerCare .footerQuestion ul li .footerNumber {
+  width: 100%;
+}
+
+* .footer .footerCare .footerQuestion ul li .footerNumber ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .footer .footerCare .footerQuestion ul li .footerNumber ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 10px;
+}
+
+* .footer .footerCare .footerQuestion ul li .footerNumber ul li a i {
+  color: #fff;
+}
+
+* .footer .footerCare .footerQuestion ul li .footerNumber ul li a {
+  color: #fff;
+}
+
+* .footer .footerCare .footerQuestion ul li .footerNumber ul li a span {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.8;
+}
+
+* .footer .footerCare .footerQuestion ul li .footerEmail {
+  width: 100%;
+}
+
+* .footer .footerCare .footerQuestion ul li .footerEmail ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .footer .footerCare .footerQuestion ul li .footerEmail ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 10px;
+}
+
+* .footer .footerCare .footerQuestion ul li .footerEmail ul li a {
+  color: #fff;
+}
+
+* .footer .footerCare .footerQuestion ul li .footerEmail ul li a span {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.8;
+}
+
+@media (max-width: 786px) {
+  * .header {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    background: #232323;
+  }
+  * .header nav {
+    padding: 0 10px;
+  }
+  * .header nav label a {
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+  }
+  * .header nav ul {
+    position: fixed;
+    width: 100%;
+    top: -600px;
+    height: 50vh;
+    background: #232323;
+  }
+  * .header nav ul li {
+    display: block;
+    margin-top: 20px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  * .header nav ul.show {
+    left: 0;
+    top: 70px;
+  }
+  * .header nav #icon {
+    display: block;
+    border: none;
+    color: rgba(255, 255, 255, 0.5) !important;
+    cursor: pointer;
+    padding-right: 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+  }
+  * .header.active {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    background: white;
+  }
+  * .header.active nav {
+    padding: 0 10px;
+  }
+  * .header.active nav label a {
+    font-size: 20px;
+  }
+  * .header.active nav ul {
+    position: fixed;
+    padding: 0 10px;
+    width: 100%;
+    top: -100%;
+    height: 50vh;
+    background: white;
+  }
+  * .header.active nav ul li {
+    color: black;
+    display: block;
+    margin: 20px 0;
+    line-height: 30px;
+    text-transform: none;
+  }
+  * .header.active nav ul.show {
+    left: 0;
+    top: 70px;
+  }
+  * .header.active nav #icon {
+    display: block;
+    display: block;
+    border: none;
+    color: rgba(0, 0, 0, 0.5) !important;
+    border-color: rgba(0, 0, 0, 0.5) !important;
+    cursor: pointer;
+    padding-right: 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+  }
+  * .blog {
+    padding: 0 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+  * .blog .formChoose {
+    width: 100%;
+  }
+  * .blog .formBlog {
+    width: 100%;
+  }
+  * .blog .formBlog .recentBlog .blogCards {
+    width: 100%;
+  }
+  * .blog .formBlog .recentBlog .blogCards .blogCard {
+    width: 100%;
+  }
+  * .blog .formBlog .recentBlog .blogCards .blogCard figure {
+    width: 20%;
+    height: 80px;
+  }
+  * .blog .formBlog .recentBlog .blogCards .blogCard figure a {
+    width: 100%;
+    height: 100%;
+  }
+  * .blog .formBlog .recentBlog .blogCards .blogCard figure a img {
+    width: 100%;
+    height: 100%;
+  }
+  * .blog .formBlog .recentBlog .blogCards .blogCard .blogDescription {
+    width: 73%;
+  }
+  * .footer {
+    padding: 0 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  * .blog {
+    padding: 0 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+  * .blog .formChoose {
+    width: 100%;
+  }
+  * .blog .formChoose .roomTour {
+    width: 100%;
+  }
+  * .blog .formChoose .roomTour div a {
+    padding-top: 20px;
+  }
+  * .blog .formChoose .roomTour div a div {
+    width: 24%;
+  }
+  * .blog .formChoose .roomAvailable {
+    width: 100%;
+  }
+  * .blog .formChoose .roomAvailable .roomCards {
+    width: 100%;
+  }
+  * .blog .formChoose .roomAvailable .roomCards .roomCard {
+    margin-right: 0;
+    width: 100%;
+  }
+  * .blog .formBlog {
+    width: 100%;
+  }
+  * .blog .formBlog .recentBlog .blogCards {
+    width: 100%;
+  }
+  * .blog .formBlog .recentBlog .blogCards .blogCard {
+    width: 100%;
+  }
+  * .blog .formBlog .recentBlog .blogCards .blogCard figure {
+    width: 20%;
+    height: 80px;
+  }
+  * .blog .formBlog .recentBlog .blogCards .blogCard figure a {
+    width: 100%;
+    height: 100%;
+  }
+  * .blog .formBlog .recentBlog .blogCards .blogCard figure a img {
+    width: 100%;
+    height: 100%;
+  }
+  * .blog .formBlog .recentBlog .blogCards .blogCard .blogDescription {
+    width: 73%;
+  }
+  * .instagram {
+    width: 100%;
+    height: auto;
+  }
+  * .instagram .instagramHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 44px;
+  }
+  * .instagram .instagramHeader h2 {
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    line-height: 1.5;
+    color: #000000;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+  }
+  * .instagram .instagramHeader h2::before {
+    width: 60%;
+    height: 2px;
+    bottom: -19px;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: #8d703b;
+    content: "";
+  }
+  * .instagram .instagramHeader h2 span {
+    text-align: center;
+    color: #000;
+    line-height: 1.5;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+  }
+  * .instagram .instagramHeader h2::after {
+    content: "";
+    width: 80%;
+    height: 2px;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: #8d703b;
+    margin-bottom: 4px;
+  }
+  * .instagram .instagramPictures ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+  * .instagram .instagramPictures ul li {
+    cursor: pointer;
+    width: 100%;
+    height: 280px;
+    position: relative;
+  }
+  * .instagram .instagramPictures ul li .clickable-image {
+    width: 100%;
+    height: 100%;
+  }
+  * .footer {
+    background-color: #232323;
+    width: 100%;
+    height: auto;
+    padding: 0 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  * .footer .footerDeluxeHotel {
+    padding-top: 80px;
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+  }
+  * .footer .footerDeluxeHotel h5 {
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+  }
+  * .footer .footerDeluxeHotel span {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.8;
+  }
+  * .footer .footerDeluxeHotel .footerSocialWeb {
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  * .footer .footerDeluxeHotel .footerSocialWeb ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  * .footer .footerDeluxeHotel .footerSocialWeb ul li {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    border-radius: 50%;
+    background-color: #2e2e2e;
+  }
+  * .footer .footerDeluxeHotel .footerSocialWeb ul li a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+  }
+  * .footer .footerDeluxeHotel .footerSocialWeb ul li a i {
+    color: #fff;
+    font-size: 25px;
+  }
+  * .footer .footerLinks {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+  }
+  * .footer .footerLinks h5 {
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+  }
+  * .footer .footerLinks div ul li {
+    margin-bottom: 20px;
+  }
+  * .footer .footerLinks div ul li a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.8;
+  }
+  * .footer .footerLinks div ul li a:hover {
+    color: #fff;
+  }
+  * .footer .footerPrivacy {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+  }
+  * .footer .footerPrivacy h5 {
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  * .footer .footerPrivacy div ul li {
+    margin-bottom: 20px;
+  }
+  * .footer .footerPrivacy div ul li a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.8;
+  }
+  * .footer .footerPrivacy div ul li a:hover {
+    color: #fff;
+  }
+  * .footer .footerCare {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+  }
+  * .footer .footerCare h5 {
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+  }
+  * .footer .footerCare .footerQuestion {
+    width: 100%;
+  }
+  * .footer .footerCare .footerQuestion ul li {
+    margin-bottom: 10px;
+  }
+  * .footer .footerCare .footerQuestion ul li .footerAddress {
+    width: 100%;
+  }
+  * .footer .footerCare .footerQuestion ul li .footerAddress ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  * .footer .footerCare .footerQuestion ul li .footerAddress ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 20px;
+  }
+  * .footer .footerCare .footerQuestion ul li .footerAddress ul li i {
+    color: #fff;
+  }
+  * .footer .footerCare .footerQuestion ul li .footerAddress ul li p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.8;
+  }
+  * .footer .footerCare .footerQuestion ul li .footerNumber {
+    width: 100%;
+  }
+  * .footer .footerCare .footerQuestion ul li .footerNumber ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  * .footer .footerCare .footerQuestion ul li .footerNumber ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 10px;
+  }
+  * .footer .footerCare .footerQuestion ul li .footerNumber ul li a i {
+    color: #fff;
+  }
+  * .footer .footerCare .footerQuestion ul li .footerNumber ul li a {
+    color: #fff;
+  }
+  * .footer .footerCare .footerQuestion ul li .footerNumber ul li a span {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.8;
+  }
+  * .footer .footerCare .footerQuestion ul li .footerEmail {
+    width: 100%;
+  }
+  * .footer .footerCare .footerQuestion ul li .footerEmail ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  * .footer .footerCare .footerQuestion ul li .footerEmail ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 10px;
+  }
+  * .footer .footerCare .footerQuestion ul li .footerEmail ul li a {
+    color: #fff;
+  }
+  * .footer .footerCare .footerQuestion ul li .footerEmail ul li a span {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.8;
+  }
+}
+/*# sourceMappingURL=singleroom.css.map */
